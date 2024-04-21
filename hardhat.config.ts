@@ -26,7 +26,7 @@ const config: HardhatUserConfig = {
     networks: {
         berachain: { 
             url: `https://artio.rpc.berachain.com/`,   
-            accounts: [`0x21509d66752f8a9f01333d0002cecfb6d915a5a0be5cd54fb095b7b31321f518`] 
+            accounts: [`${process.env.PRIVATE_KEY_DEPLOY}`]
          },
     },
     paths: {
