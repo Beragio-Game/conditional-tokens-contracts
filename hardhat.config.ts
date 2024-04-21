@@ -17,18 +17,17 @@ const accounts = {
 };
 
 const config: HardhatUserConfig = {
-    defaultNetwork: "hardhat",
+    defaultNetwork: "berachain",
     namedAccounts: {
         deployer: 0, // Do not use this account for testing
         admin: 1,
         trader: 2,
     },
     networks: {
-        goerli: { accounts, ...getRemoteNetworkConfig("goerli") },
-        kovan: { accounts, ...getRemoteNetworkConfig("kovan") },
-        rinkeby: { accounts, ...getRemoteNetworkConfig("rinkeby") },
-        ropsten: { accounts, ...getRemoteNetworkConfig("ropsten") },
-        matic: { accounts, ...getRemoteNetworkConfig("matic"), gasPrice: 8000000000 },
+        berachain: { 
+            url: `https://artio.rpc.berachain.com/`,   
+            accounts: [`${process.env.PRIVATE_KEY_DEPLOY}`]
+         },
     },
     paths: {
         artifacts: "./artifacts",

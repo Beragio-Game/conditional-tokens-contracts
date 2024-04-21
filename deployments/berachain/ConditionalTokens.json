@@ -1,0 +1,848 @@
+{
+  "address": "0x50832198F0801Da8C15D9B0F9D709bEBf8F318d9",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "balanceOf",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "indexSets",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "redeemPositions",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "interfaceId",
+          "type": "bytes4"
+        }
+      ],
+      "name": "supportsInterface",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "payoutNumerators",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "name": "ids",
+          "type": "uint256[]"
+        },
+        {
+          "name": "values",
+          "type": "uint256[]"
+        },
+        {
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeBatchTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "name": "collectionId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getPositionId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owners",
+          "type": "address[]"
+        },
+        {
+          "name": "ids",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "balanceOfBatch",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "partition",
+          "type": "uint256[]"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "splitPosition",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "oracle",
+          "type": "address"
+        },
+        {
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "outcomeSlotCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "getConditionId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "indexSet",
+          "type": "uint256"
+        }
+      ],
+      "name": "getCollectionId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "partition",
+          "type": "uint256[]"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "mergePositions",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "setApprovalForAll",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "payouts",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "reportPayouts",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "conditionId",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getOutcomeSlotCount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "oracle",
+          "type": "address"
+        },
+        {
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "name": "outcomeSlotCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "prepareCondition",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "payoutDenominator",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "name": "operator",
+          "type": "address"
+        }
+      ],
+      "name": "isApprovedForAll",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "name": "value",
+          "type": "uint256"
+        },
+        {
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "safeTransferFrom",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "oracle",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "outcomeSlotCount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ConditionPreparation",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "oracle",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "questionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "outcomeSlotCount",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "payoutNumerators",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "ConditionResolution",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "stakeholder",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "partition",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "PositionSplit",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "stakeholder",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "partition",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "PositionsMerge",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "redeemer",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "collateralToken",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "parentCollectionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "conditionId",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "name": "indexSets",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "name": "payout",
+          "type": "uint256"
+        }
+      ],
+      "name": "PayoutRedemption",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "uint256"
+        }
+      ],
+      "name": "TransferSingle",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "ids",
+          "type": "uint256[]"
+        },
+        {
+          "indexed": false,
+          "name": "values",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "TransferBatch",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "value",
+          "type": "string"
+        },
+        {
+          "indexed": true,
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "URI",
+      "type": "event"
+    }
+  ],
+  "transactionHash": "0x985420694e66d1f69c8b571b07de3aa669a885754a02396ebb5887633392f601",
+  "receipt": {
+    "to": null,
+    "from": "0xd0c6cED6D99f4B78e968a05adc2A3f26cFcAaBF5",
+    "contractAddress": "0x50832198F0801Da8C15D9B0F9D709bEBf8F318d9",
+    "transactionIndex": 52,
+    "gasUsed": "3549157",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x853991bd50d58119348f3fb2ae69a18df5c71de93439f4cbded31960d826cf1d",
+    "transactionHash": "0x985420694e66d1f69c8b571b07de3aa669a885754a02396ebb5887633392f601",
+    "logs": [],
+    "blockNumber": 1711406,
+    "cumulativeGasUsed": "12832638",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "solcInputHash": "b275e73da346a546198422fac8076da5",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"balanceOf\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"collateralToken\",\"type\":\"address\"},{\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"name\":\"indexSets\",\"type\":\"uint256[]\"}],\"name\":\"redeemPositions\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"interfaceId\",\"type\":\"bytes4\"}],\"name\":\"supportsInterface\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"bytes32\"},{\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"payoutNumerators\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"ids\",\"type\":\"uint256[]\"},{\"name\":\"values\",\"type\":\"uint256[]\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeBatchTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"collateralToken\",\"type\":\"address\"},{\"name\":\"collectionId\",\"type\":\"bytes32\"}],\"name\":\"getPositionId\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owners\",\"type\":\"address[]\"},{\"name\":\"ids\",\"type\":\"uint256[]\"}],\"name\":\"balanceOfBatch\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256[]\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"collateralToken\",\"type\":\"address\"},{\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"name\":\"partition\",\"type\":\"uint256[]\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"splitPosition\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"oracle\",\"type\":\"address\"},{\"name\":\"questionId\",\"type\":\"bytes32\"},{\"name\":\"outcomeSlotCount\",\"type\":\"uint256\"}],\"name\":\"getConditionId\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"name\":\"indexSet\",\"type\":\"uint256\"}],\"name\":\"getCollectionId\",\"outputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"collateralToken\",\"type\":\"address\"},{\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"name\":\"partition\",\"type\":\"uint256[]\"},{\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"mergePositions\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"operator\",\"type\":\"address\"},{\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"setApprovalForAll\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"questionId\",\"type\":\"bytes32\"},{\"name\":\"payouts\",\"type\":\"uint256[]\"}],\"name\":\"reportPayouts\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"conditionId\",\"type\":\"bytes32\"}],\"name\":\"getOutcomeSlotCount\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"oracle\",\"type\":\"address\"},{\"name\":\"questionId\",\"type\":\"bytes32\"},{\"name\":\"outcomeSlotCount\",\"type\":\"uint256\"}],\"name\":\"prepareCondition\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"\",\"type\":\"bytes32\"}],\"name\":\"payoutDenominator\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"name\":\"owner\",\"type\":\"address\"},{\"name\":\"operator\",\"type\":\"address\"}],\"name\":\"isApprovedForAll\",\"outputs\":[{\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"name\":\"from\",\"type\":\"address\"},{\"name\":\"to\",\"type\":\"address\"},{\"name\":\"id\",\"type\":\"uint256\"},{\"name\":\"value\",\"type\":\"uint256\"},{\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"safeTransferFrom\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"indexed\":true,\"name\":\"oracle\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"questionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"outcomeSlotCount\",\"type\":\"uint256\"}],\"name\":\"ConditionPreparation\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"indexed\":true,\"name\":\"oracle\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"questionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"outcomeSlotCount\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"payoutNumerators\",\"type\":\"uint256[]\"}],\"name\":\"ConditionResolution\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"stakeholder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"collateralToken\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"indexed\":true,\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"partition\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"PositionSplit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"stakeholder\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"collateralToken\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"indexed\":true,\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"partition\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"PositionsMerge\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"redeemer\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"collateralToken\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"parentCollectionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"conditionId\",\"type\":\"bytes32\"},{\"indexed\":false,\"name\":\"indexSets\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"payout\",\"type\":\"uint256\"}],\"name\":\"PayoutRedemption\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"id\",\"type\":\"uint256\"},{\"indexed\":false,\"name\":\"value\",\"type\":\"uint256\"}],\"name\":\"TransferSingle\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"ids\",\"type\":\"uint256[]\"},{\"indexed\":false,\"name\":\"values\",\"type\":\"uint256[]\"}],\"name\":\"TransferBatch\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"name\":\"owner\",\"type\":\"address\"},{\"indexed\":true,\"name\":\"operator\",\"type\":\"address\"},{\"indexed\":false,\"name\":\"approved\",\"type\":\"bool\"}],\"name\":\"ApprovalForAll\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"name\":\"value\",\"type\":\"string\"},{\"indexed\":true,\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"URI\",\"type\":\"event\"}],\"devdoc\":{\"methods\":{\"balanceOf(address,uint256)\":{\"details\":\"Get the specified address' balance for token with specified ID.\",\"params\":{\"id\":\"ID of the token\",\"owner\":\"The address of the token holder\"},\"return\":\"The owner's balance of the token type requested\"},\"balanceOfBatch(address[],uint256[])\":{\"details\":\"Get the balance of multiple account/token pairs\",\"params\":{\"ids\":\"IDs of the tokens\",\"owners\":\"The addresses of the token holders\"},\"return\":\"Balances for each owner and token id pair\"},\"getCollectionId(bytes32,bytes32,uint256)\":{\"details\":\"Constructs an outcome collection ID from a parent collection and an outcome collection.\",\"params\":{\"conditionId\":\"Condition ID of the outcome collection to combine with the parent outcome collection.\",\"indexSet\":\"Index set of the outcome collection to combine with the parent outcome collection.\",\"parentCollectionId\":\"Collection ID of the parent outcome collection, or bytes32(0) if there's no parent.\"}},\"getConditionId(address,bytes32,uint256)\":{\"details\":\"Constructs a condition ID from an oracle, a question ID, and the outcome slot count for the question.\",\"params\":{\"oracle\":\"The account assigned to report the result for the prepared condition.\",\"outcomeSlotCount\":\"The number of outcome slots which should be used for this condition. Must not exceed 256.\",\"questionId\":\"An identifier for the question to be answered by the oracle.\"}},\"getOutcomeSlotCount(bytes32)\":{\"details\":\"Gets the outcome slot count of a condition.\",\"params\":{\"conditionId\":\"ID of the condition.\"},\"return\":\"Number of outcome slots associated with a condition, or zero if condition has not been prepared yet.\"},\"getPositionId(address,bytes32)\":{\"details\":\"Constructs a position ID from a collateral token and an outcome collection. These IDs are used as the ERC-1155 ID for this contract.\",\"params\":{\"collateralToken\":\"Collateral token which backs the position.\",\"collectionId\":\"ID of the outcome collection associated with this position.\"}},\"isApprovedForAll(address,address)\":{\"params\":{\"operator\":\"Address of authorized operator\",\"owner\":\"The owner of the Tokens\"},\"return\":\"True if the operator is approved, false if not\"},\"prepareCondition(address,bytes32,uint256)\":{\"details\":\"This function prepares a condition by initializing a payout vector associated with the condition.\",\"params\":{\"oracle\":\"The account assigned to report the result for the prepared condition.\",\"outcomeSlotCount\":\"The number of outcome slots which should be used for this condition. Must not exceed 256.\",\"questionId\":\"An identifier for the question to be answered by the oracle.\"}},\"reportPayouts(bytes32,uint256[])\":{\"details\":\"Called by the oracle for reporting results of conditions. Will set the payout vector for the condition with the ID ``keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount))``, where oracle is the message sender, questionId is one of the parameters of this function, and outcomeSlotCount is the length of the payouts parameter, which contains the payoutNumerators for each outcome slot of the condition.\",\"params\":{\"payouts\":\"The oracle's answer\",\"questionId\":\"The question ID the oracle is answering for\"}},\"safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)\":{\"details\":\"Transfers `values` amount(s) of `ids` from the `from` address to the `to` address specified. Caller must be approved to manage the tokens being transferred out of the `from` account. If `to` is a smart contract, will call `onERC1155BatchReceived` on `to` and act appropriately.\",\"params\":{\"data\":\"Data forwarded to `onERC1155Received` if `to` is a contract receiver\",\"from\":\"Source address\",\"ids\":\"IDs of each token type\",\"to\":\"Target address\",\"values\":\"Transfer amounts per token type\"}},\"safeTransferFrom(address,address,uint256,uint256,bytes)\":{\"details\":\"Transfers `value` amount of an `id` from the `from` address to the `to` address specified. Caller must be approved to manage the tokens being transferred out of the `from` account. If `to` is a smart contract, will call `onERC1155Received` on `to` and act appropriately.\",\"params\":{\"data\":\"Data forwarded to `onERC1155Received` if `to` is a contract receiver\",\"from\":\"Source address\",\"id\":\"ID of the token type\",\"to\":\"Target address\",\"value\":\"Transfer amount\"}},\"setApprovalForAll(address,bool)\":{\"details\":\"Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf\",\"params\":{\"approved\":\"representing the status of the approval to be set\",\"operator\":\"address to set the approval\"}},\"splitPosition(address,bytes32,bytes32,uint256[],uint256)\":{\"details\":\"This function splits a position. If splitting from the collateral, this contract will attempt to transfer `amount` collateral from the message sender to itself. Otherwise, this contract will burn `amount` stake held by the message sender in the position being split worth of EIP 1155 tokens. Regardless, if successful, `amount` stake will be minted in the split target positions. If any of the transfers, mints, or burns fail, the transaction will revert. The transaction will also revert if the given partition is trivial, invalid, or refers to more slots than the condition is prepared with.\",\"params\":{\"amount\":\"The amount of collateral or stake to split.\",\"collateralToken\":\"The address of the positions' backing collateral token.\",\"conditionId\":\"The ID of the condition to split on.\",\"parentCollectionId\":\"The ID of the outcome collections common to the position being split and the split target positions. May be null, in which only the collateral is shared.\",\"partition\":\"An array of disjoint index sets representing a nontrivial partition of the outcome slots of the given condition. E.g. A|B and C but not A|B and B|C (is not disjoint). Each element's a number which, together with the condition, represents the outcome collection. E.g. 0b110 is A|B, 0b010 is B, etc.\"}},\"supportsInterface(bytes4)\":{\"details\":\"See `IERC165.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\"}}},\"userdoc\":{\"methods\":{\"isApprovedForAll(address,address)\":{\"notice\":\"Queries the approval status of an operator for a given owner.\"}}}},\"settings\":{\"compilationTarget\":{\"contracts/ConditionalTokens.sol\":\"ConditionalTokens\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/CTHelpers.sol\":{\"content\":\"pragma solidity ^0.5.1;\\n\\nimport { IERC20 } from \\\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\\\";\\n\\nlibrary CTHelpers {\\n    /// @dev Constructs a condition ID from an oracle, a question ID, and the outcome slot count for the question.\\n    /// @param oracle The account assigned to report the result for the prepared condition.\\n    /// @param questionId An identifier for the question to be answered by the oracle.\\n    /// @param outcomeSlotCount The number of outcome slots which should be used for this condition. Must not exceed 256.\\n    function getConditionId(address oracle, bytes32 questionId, uint outcomeSlotCount) internal pure returns (bytes32) {\\n        return keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount));\\n    }\\n\\n    uint constant P = 21888242871839275222246405745257275088696311157297823662689037894645226208583;\\n    uint constant B = 3;\\n\\n    function sqrt(uint x) private pure returns (uint y) {\\n        uint p = P;\\n        // solium-disable-next-line security/no-inline-assembly\\n        assembly {\\n            // add chain generated via https://crypto.stackexchange.com/q/27179/71252\\n            // and transformed to the following program:\\n\\n            // x=1; y=x+x; z=y+y; z=z+z; y=y+z; x=x+y; y=y+x; z=y+y; t=z+z; t=z+t; t=t+t;\\n            // t=t+t; z=z+t; x=x+z; z=x+x; z=z+z; y=y+z; z=y+y; z=z+z; z=z+z; z=y+z; x=x+z;\\n            // z=x+x; z=z+z; z=z+z; z=x+z; y=y+z; x=x+y; z=x+x; z=z+z; y=y+z; z=y+y; t=z+z;\\n            // t=t+t; t=t+t; z=z+t; x=x+z; y=y+x; z=y+y; z=z+z; z=z+z; x=x+z; z=x+x; z=z+z;\\n            // z=x+z; z=z+z; z=z+z; z=x+z; y=y+z; z=y+y; t=z+z; t=t+t; t=z+t; t=y+t; t=t+t;\\n            // t=t+t; t=t+t; t=t+t; z=z+t; x=x+z; z=x+x; z=x+z; y=y+z; z=y+y; z=y+z; z=z+z;\\n            // t=z+z; t=z+t; w=t+t; w=w+w; w=w+w; w=w+w; w=w+w; t=t+w; z=z+t; x=x+z; y=y+x;\\n            // z=y+y; x=x+z; y=y+x; x=x+y; y=y+x; x=x+y; z=x+x; z=x+z; z=z+z; y=y+z; z=y+y;\\n            // z=z+z; x=x+z; y=y+x; z=y+y; z=y+z; x=x+z; y=y+x; x=x+y; y=y+x; z=y+y; z=z+z;\\n            // z=y+z; x=x+z; z=x+x; z=x+z; y=y+z; x=x+y; y=y+x; x=x+y; y=y+x; z=y+y; z=y+z;\\n            // z=z+z; x=x+z; y=y+x; z=y+y; z=y+z; z=z+z; x=x+z; z=x+x; t=z+z; t=t+t; t=z+t;\\n            // t=x+t; t=t+t; t=t+t; t=t+t; t=t+t; z=z+t; y=y+z; x=x+y; y=y+x; x=x+y; z=x+x;\\n            // z=x+z; z=z+z; z=z+z; z=z+z; z=x+z; y=y+z; z=y+y; z=y+z; z=z+z; x=x+z; z=x+x;\\n            // z=x+z; y=y+z; x=x+y; z=x+x; z=z+z; y=y+z; x=x+y; z=x+x; y=y+z; x=x+y; y=y+x;\\n            // z=y+y; z=y+z; x=x+z; y=y+x; z=y+y; z=y+z; z=z+z; z=z+z; x=x+z; z=x+x; z=z+z;\\n            // z=z+z; z=x+z; y=y+z; x=x+y; z=x+x; t=x+z; t=t+t; t=t+t; z=z+t; y=y+z; z=y+y;\\n            // x=x+z; y=y+x; x=x+y; y=y+x; x=x+y; y=y+x; z=y+y; t=y+z; z=y+t; z=z+z; z=z+z;\\n            // z=t+z; x=x+z; y=y+x; x=x+y; y=y+x; x=x+y; z=x+x; z=x+z; y=y+z; x=x+y; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x; x=x+x;\\n            // x=x+x; x=x+x; x=x+x; x=x+x; res=y+x\\n            // res == (P + 1) // 4\\n\\n            y := mulmod(x, x, p)\\n            {\\n                let z := mulmod(y, y, p)\\n                z := mulmod(z, z, p)\\n                y := mulmod(y, z, p)\\n                x := mulmod(x, y, p)\\n                y := mulmod(y, x, p)\\n                z := mulmod(y, y, p)\\n                {\\n                    let t := mulmod(z, z, p)\\n                    t := mulmod(z, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    z := mulmod(z, t, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(y, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    t := mulmod(z, z, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    z := mulmod(z, t, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(x, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    t := mulmod(z, z, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(z, t, p)\\n                    t := mulmod(y, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    z := mulmod(z, t, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    z := mulmod(z, z, p)\\n                    t := mulmod(z, z, p)\\n                    t := mulmod(z, t, p)\\n                    {\\n                        let w := mulmod(t, t, p)\\n                        w := mulmod(w, w, p)\\n                        w := mulmod(w, w, p)\\n                        w := mulmod(w, w, p)\\n                        w := mulmod(w, w, p)\\n                        t := mulmod(t, w, p)\\n                    }\\n                    z := mulmod(z, t, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(x, z, p)\\n                    z := mulmod(z, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(y, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    t := mulmod(z, z, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(z, t, p)\\n                    t := mulmod(x, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    z := mulmod(z, t, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(x, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    z := mulmod(y, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    x := mulmod(x, z, p)\\n                    z := mulmod(x, x, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(x, z, p)\\n                    y := mulmod(y, z, p)\\n                    x := mulmod(x, y, p)\\n                    z := mulmod(x, x, p)\\n                    t := mulmod(x, z, p)\\n                    t := mulmod(t, t, p)\\n                    t := mulmod(t, t, p)\\n                    z := mulmod(z, t, p)\\n                    y := mulmod(y, z, p)\\n                    z := mulmod(y, y, p)\\n                    x := mulmod(x, z, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    x := mulmod(x, y, p)\\n                    y := mulmod(y, x, p)\\n                    z := mulmod(y, y, p)\\n                    t := mulmod(y, z, p)\\n                    z := mulmod(y, t, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(z, z, p)\\n                    z := mulmod(t, z, p)\\n                }\\n                x := mulmod(x, z, p)\\n                y := mulmod(y, x, p)\\n                x := mulmod(x, y, p)\\n                y := mulmod(y, x, p)\\n                x := mulmod(x, y, p)\\n                z := mulmod(x, x, p)\\n                z := mulmod(x, z, p)\\n                y := mulmod(y, z, p)\\n            }\\n            x := mulmod(x, y, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            x := mulmod(x, x, p)\\n            y := mulmod(y, x, p)\\n        }\\n    }\\n\\n    /// @dev Constructs an outcome collection ID from a parent collection and an outcome collection.\\n    /// @param parentCollectionId Collection ID of the parent outcome collection, or bytes32(0) if there's no parent.\\n    /// @param conditionId Condition ID of the outcome collection to combine with the parent outcome collection.\\n    /// @param indexSet Index set of the outcome collection to combine with the parent outcome collection.\\n    function getCollectionId(bytes32 parentCollectionId, bytes32 conditionId, uint indexSet) internal view returns (bytes32) {\\n        uint x1 = uint(keccak256(abi.encodePacked(conditionId, indexSet)));\\n        bool odd = x1 >> 255 != 0;\\n        uint y1;\\n        uint yy;\\n        do {\\n            x1 = addmod(x1, 1, P);\\n            yy = addmod(mulmod(x1, mulmod(x1, x1, P), P), B, P);\\n            y1 = sqrt(yy);\\n        } while(mulmod(y1, y1, P) != yy);\\n        if(odd && y1 % 2 == 0 || !odd && y1 % 2 == 1)\\n            y1 = P - y1;\\n\\n        uint x2 = uint(parentCollectionId);\\n        if(x2 != 0) {\\n            odd = x2 >> 254 != 0;\\n            x2 = (x2 << 2) >> 2;\\n            yy = addmod(mulmod(x2, mulmod(x2, x2, P), P), B, P);\\n            uint y2 = sqrt(yy);\\n            if(odd && y2 % 2 == 0 || !odd && y2 % 2 == 1)\\n                y2 = P - y2;\\n            require(mulmod(y2, y2, P) == yy, \\\"invalid parent collection ID\\\");\\n\\n            (bool success, bytes memory ret) = address(6).staticcall(abi.encode(x1, y1, x2, y2));\\n            require(success, \\\"ecadd failed\\\");\\n            (x1, y1) = abi.decode(ret, (uint, uint));\\n        }\\n\\n        if(y1 % 2 == 1)\\n            x1 ^= 1 << 254;\\n\\n        return bytes32(x1);\\n    }\\n\\n    /// @dev Constructs a position ID from a collateral token and an outcome collection. These IDs are used as the ERC-1155 ID for this contract.\\n    /// @param collateralToken Collateral token which backs the position.\\n    /// @param collectionId ID of the outcome collection associated with this position.\\n    function getPositionId(IERC20 collateralToken, bytes32 collectionId) internal pure returns (uint) {\\n        return uint(keccak256(abi.encodePacked(collateralToken, collectionId)));\\n    }\\n}\",\"keccak256\":\"0x921eadb1d6cd0e742448334fb84c39b358a18cdeb7c6badbb89cae847d44a201\"},\"contracts/ConditionalTokens.sol\":{\"content\":\"pragma solidity ^0.5.1;\\nimport { IERC20 } from \\\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\\\";\\nimport { ERC1155 } from \\\"./ERC1155/ERC1155.sol\\\";\\nimport { CTHelpers } from \\\"./CTHelpers.sol\\\";\\n\\ncontract ConditionalTokens is ERC1155 {\\n\\n    /// @dev Emitted upon the successful preparation of a condition.\\n    /// @param conditionId The condition's ID. This ID may be derived from the other three parameters via ``keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount))``.\\n    /// @param oracle The account assigned to report the result for the prepared condition.\\n    /// @param questionId An identifier for the question to be answered by the oracle.\\n    /// @param outcomeSlotCount The number of outcome slots which should be used for this condition. Must not exceed 256.\\n    event ConditionPreparation(\\n        bytes32 indexed conditionId,\\n        address indexed oracle,\\n        bytes32 indexed questionId,\\n        uint outcomeSlotCount\\n    );\\n\\n    event ConditionResolution(\\n        bytes32 indexed conditionId,\\n        address indexed oracle,\\n        bytes32 indexed questionId,\\n        uint outcomeSlotCount,\\n        uint[] payoutNumerators\\n    );\\n\\n    /// @dev Emitted when a position is successfully split.\\n    event PositionSplit(\\n        address indexed stakeholder,\\n        IERC20 collateralToken,\\n        bytes32 indexed parentCollectionId,\\n        bytes32 indexed conditionId,\\n        uint[] partition,\\n        uint amount\\n    );\\n    /// @dev Emitted when positions are successfully merged.\\n    event PositionsMerge(\\n        address indexed stakeholder,\\n        IERC20 collateralToken,\\n        bytes32 indexed parentCollectionId,\\n        bytes32 indexed conditionId,\\n        uint[] partition,\\n        uint amount\\n    );\\n    event PayoutRedemption(\\n        address indexed redeemer,\\n        IERC20 indexed collateralToken,\\n        bytes32 indexed parentCollectionId,\\n        bytes32 conditionId,\\n        uint[] indexSets,\\n        uint payout\\n    );\\n\\n\\n    /// Mapping key is an condition ID. Value represents numerators of the payout vector associated with the condition. This array is initialized with a length equal to the outcome slot count. E.g. Condition with 3 outcomes [A, B, C] and two of those correct [0.5, 0.5, 0]. In Ethereum there are no decimal values, so here, 0.5 is represented by fractions like 1/2 == 0.5. That's why we need numerator and denominator values. Payout numerators are also used as a check of initialization. If the numerators array is empty (has length zero), the condition was not created/prepared. See getOutcomeSlotCount.\\n    mapping(bytes32 => uint[]) public payoutNumerators;\\n    /// Denominator is also used for checking if the condition has been resolved. If the denominator is non-zero, then the condition has been resolved.\\n    mapping(bytes32 => uint) public payoutDenominator;\\n\\n    /// @dev This function prepares a condition by initializing a payout vector associated with the condition.\\n    /// @param oracle The account assigned to report the result for the prepared condition.\\n    /// @param questionId An identifier for the question to be answered by the oracle.\\n    /// @param outcomeSlotCount The number of outcome slots which should be used for this condition. Must not exceed 256.\\n    function prepareCondition(address oracle, bytes32 questionId, uint outcomeSlotCount) external {\\n        // Limit of 256 because we use a partition array that is a number of 256 bits.\\n        require(outcomeSlotCount <= 256, \\\"too many outcome slots\\\");\\n        require(outcomeSlotCount > 1, \\\"there should be more than one outcome slot\\\");\\n        bytes32 conditionId = CTHelpers.getConditionId(oracle, questionId, outcomeSlotCount);\\n        require(payoutNumerators[conditionId].length == 0, \\\"condition already prepared\\\");\\n        payoutNumerators[conditionId] = new uint[](outcomeSlotCount);\\n        emit ConditionPreparation(conditionId, oracle, questionId, outcomeSlotCount);\\n    }\\n\\n    /// @dev Called by the oracle for reporting results of conditions. Will set the payout vector for the condition with the ID ``keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount))``, where oracle is the message sender, questionId is one of the parameters of this function, and outcomeSlotCount is the length of the payouts parameter, which contains the payoutNumerators for each outcome slot of the condition.\\n    /// @param questionId The question ID the oracle is answering for\\n    /// @param payouts The oracle's answer\\n    function reportPayouts(bytes32 questionId, uint[] calldata payouts) external {\\n        uint outcomeSlotCount = payouts.length;\\n        require(outcomeSlotCount > 1, \\\"there should be more than one outcome slot\\\");\\n        // IMPORTANT, the oracle is enforced to be the sender because it's part of the hash.\\n        bytes32 conditionId = CTHelpers.getConditionId(msg.sender, questionId, outcomeSlotCount);\\n        require(payoutNumerators[conditionId].length == outcomeSlotCount, \\\"condition not prepared or found\\\");\\n        require(payoutDenominator[conditionId] == 0, \\\"payout denominator already set\\\");\\n\\n        uint den = 0;\\n        for (uint i = 0; i < outcomeSlotCount; i++) {\\n            uint num = payouts[i];\\n            den = den.add(num);\\n\\n            require(payoutNumerators[conditionId][i] == 0, \\\"payout numerator already set\\\");\\n            payoutNumerators[conditionId][i] = num;\\n        }\\n        require(den > 0, \\\"payout is all zeroes\\\");\\n        payoutDenominator[conditionId] = den;\\n        emit ConditionResolution(conditionId, msg.sender, questionId, outcomeSlotCount, payoutNumerators[conditionId]);\\n    }\\n\\n    /// @dev This function splits a position. If splitting from the collateral, this contract will attempt to transfer `amount` collateral from the message sender to itself. Otherwise, this contract will burn `amount` stake held by the message sender in the position being split worth of EIP 1155 tokens. Regardless, if successful, `amount` stake will be minted in the split target positions. If any of the transfers, mints, or burns fail, the transaction will revert. The transaction will also revert if the given partition is trivial, invalid, or refers to more slots than the condition is prepared with.\\n    /// @param collateralToken The address of the positions' backing collateral token.\\n    /// @param parentCollectionId The ID of the outcome collections common to the position being split and the split target positions. May be null, in which only the collateral is shared.\\n    /// @param conditionId The ID of the condition to split on.\\n    /// @param partition An array of disjoint index sets representing a nontrivial partition of the outcome slots of the given condition. E.g. A|B and C but not A|B and B|C (is not disjoint). Each element's a number which, together with the condition, represents the outcome collection. E.g. 0b110 is A|B, 0b010 is B, etc.\\n    /// @param amount The amount of collateral or stake to split.\\n    function splitPosition(\\n        IERC20 collateralToken,\\n        bytes32 parentCollectionId,\\n        bytes32 conditionId,\\n        uint[] calldata partition,\\n        uint amount\\n    ) external {\\n        require(partition.length > 1, \\\"got empty or singleton partition\\\");\\n        uint outcomeSlotCount = payoutNumerators[conditionId].length;\\n        require(outcomeSlotCount > 0, \\\"condition not prepared yet\\\");\\n\\n        // For a condition with 4 outcomes fullIndexSet's 0b1111; for 5 it's 0b11111...\\n        uint fullIndexSet = (1 << outcomeSlotCount) - 1;\\n        // freeIndexSet starts as the full collection\\n        uint freeIndexSet = fullIndexSet;\\n        // This loop checks that all condition sets are disjoint (the same outcome is not part of more than 1 set)\\n        uint[] memory positionIds = new uint[](partition.length);\\n        uint[] memory amounts = new uint[](partition.length);\\n        for (uint i = 0; i < partition.length; i++) {\\n            uint indexSet = partition[i];\\n            require(indexSet > 0 && indexSet < fullIndexSet, \\\"got invalid index set\\\");\\n            require((indexSet & freeIndexSet) == indexSet, \\\"partition not disjoint\\\");\\n            freeIndexSet ^= indexSet;\\n            positionIds[i] = CTHelpers.getPositionId(collateralToken, CTHelpers.getCollectionId(parentCollectionId, conditionId, indexSet));\\n            amounts[i] = amount;\\n        }\\n\\n        if (freeIndexSet == 0) {\\n            // Partitioning the full set of outcomes for the condition in this branch\\n            if (parentCollectionId == bytes32(0)) {\\n                require(collateralToken.transferFrom(msg.sender, address(this), amount), \\\"could not receive collateral tokens\\\");\\n            } else {\\n                _burn(\\n                    msg.sender,\\n                    CTHelpers.getPositionId(collateralToken, parentCollectionId),\\n                    amount\\n                );\\n            }\\n        } else {\\n            // Partitioning a subset of outcomes for the condition in this branch.\\n            // For example, for a condition with three outcomes A, B, and C, this branch\\n            // allows the splitting of a position $:(A|C) to positions $:(A) and $:(C).\\n            _burn(\\n                msg.sender,\\n                CTHelpers.getPositionId(collateralToken,\\n                    CTHelpers.getCollectionId(parentCollectionId, conditionId, fullIndexSet ^ freeIndexSet)),\\n                amount\\n            );\\n        }\\n\\n        _batchMint(\\n            msg.sender,\\n            // position ID is the ERC 1155 token ID\\n            positionIds,\\n            amounts,\\n            \\\"\\\"\\n        );\\n        emit PositionSplit(msg.sender, collateralToken, parentCollectionId, conditionId, partition, amount);\\n    }\\n\\n    function mergePositions(\\n        IERC20 collateralToken,\\n        bytes32 parentCollectionId,\\n        bytes32 conditionId,\\n        uint[] calldata partition,\\n        uint amount\\n    ) external {\\n        require(partition.length > 1, \\\"got empty or singleton partition\\\");\\n        uint outcomeSlotCount = payoutNumerators[conditionId].length;\\n        require(outcomeSlotCount > 0, \\\"condition not prepared yet\\\");\\n\\n        uint fullIndexSet = (1 << outcomeSlotCount) - 1;\\n        uint freeIndexSet = fullIndexSet;\\n        uint[] memory positionIds = new uint[](partition.length);\\n        uint[] memory amounts = new uint[](partition.length);\\n        for (uint i = 0; i < partition.length; i++) {\\n            uint indexSet = partition[i];\\n            require(indexSet > 0 && indexSet < fullIndexSet, \\\"got invalid index set\\\");\\n            require((indexSet & freeIndexSet) == indexSet, \\\"partition not disjoint\\\");\\n            freeIndexSet ^= indexSet;\\n            positionIds[i] = CTHelpers.getPositionId(collateralToken, CTHelpers.getCollectionId(parentCollectionId, conditionId, indexSet));\\n            amounts[i] = amount;\\n        }\\n        _batchBurn(\\n            msg.sender,\\n            positionIds,\\n            amounts\\n        );\\n\\n        if (freeIndexSet == 0) {\\n            if (parentCollectionId == bytes32(0)) {\\n                require(collateralToken.transfer(msg.sender, amount), \\\"could not send collateral tokens\\\");\\n            } else {\\n                _mint(\\n                    msg.sender,\\n                    CTHelpers.getPositionId(collateralToken, parentCollectionId),\\n                    amount,\\n                    \\\"\\\"\\n                );\\n            }\\n        } else {\\n            _mint(\\n                msg.sender,\\n                CTHelpers.getPositionId(collateralToken,\\n                    CTHelpers.getCollectionId(parentCollectionId, conditionId, fullIndexSet ^ freeIndexSet)),\\n                amount,\\n                \\\"\\\"\\n            );\\n        }\\n\\n        emit PositionsMerge(msg.sender, collateralToken, parentCollectionId, conditionId, partition, amount);\\n    }\\n\\n    function redeemPositions(IERC20 collateralToken, bytes32 parentCollectionId, bytes32 conditionId, uint[] calldata indexSets) external {\\n        uint den = payoutDenominator[conditionId];\\n        require(den > 0, \\\"result for condition not received yet\\\");\\n        uint outcomeSlotCount = payoutNumerators[conditionId].length;\\n        require(outcomeSlotCount > 0, \\\"condition not prepared yet\\\");\\n\\n        uint totalPayout = 0;\\n\\n        uint fullIndexSet = (1 << outcomeSlotCount) - 1;\\n        for (uint i = 0; i < indexSets.length; i++) {\\n            uint indexSet = indexSets[i];\\n            require(indexSet > 0 && indexSet < fullIndexSet, \\\"got invalid index set\\\");\\n            uint positionId = CTHelpers.getPositionId(collateralToken,\\n                CTHelpers.getCollectionId(parentCollectionId, conditionId, indexSet));\\n\\n            uint payoutNumerator = 0;\\n            for (uint j = 0; j < outcomeSlotCount; j++) {\\n                if (indexSet & (1 << j) != 0) {\\n                    payoutNumerator = payoutNumerator.add(payoutNumerators[conditionId][j]);\\n                }\\n            }\\n\\n            uint payoutStake = balanceOf(msg.sender, positionId);\\n            if (payoutStake > 0) {\\n                totalPayout = totalPayout.add(payoutStake.mul(payoutNumerator).div(den));\\n                _burn(msg.sender, positionId, payoutStake);\\n            }\\n        }\\n\\n        if (totalPayout > 0) {\\n            if (parentCollectionId == bytes32(0)) {\\n                require(collateralToken.transfer(msg.sender, totalPayout), \\\"could not transfer payout to message sender\\\");\\n            } else {\\n                _mint(msg.sender, CTHelpers.getPositionId(collateralToken, parentCollectionId), totalPayout, \\\"\\\");\\n            }\\n        }\\n        emit PayoutRedemption(msg.sender, collateralToken, parentCollectionId, conditionId, indexSets, totalPayout);\\n    }\\n\\n    /// @dev Gets the outcome slot count of a condition.\\n    /// @param conditionId ID of the condition.\\n    /// @return Number of outcome slots associated with a condition, or zero if condition has not been prepared yet.\\n    function getOutcomeSlotCount(bytes32 conditionId) external view returns (uint) {\\n        return payoutNumerators[conditionId].length;\\n    }\\n\\n    /// @dev Constructs a condition ID from an oracle, a question ID, and the outcome slot count for the question.\\n    /// @param oracle The account assigned to report the result for the prepared condition.\\n    /// @param questionId An identifier for the question to be answered by the oracle.\\n    /// @param outcomeSlotCount The number of outcome slots which should be used for this condition. Must not exceed 256.\\n    function getConditionId(address oracle, bytes32 questionId, uint outcomeSlotCount) external pure returns (bytes32) {\\n        return CTHelpers.getConditionId(oracle, questionId, outcomeSlotCount);\\n    }\\n\\n    /// @dev Constructs an outcome collection ID from a parent collection and an outcome collection.\\n    /// @param parentCollectionId Collection ID of the parent outcome collection, or bytes32(0) if there's no parent.\\n    /// @param conditionId Condition ID of the outcome collection to combine with the parent outcome collection.\\n    /// @param indexSet Index set of the outcome collection to combine with the parent outcome collection.\\n    function getCollectionId(bytes32 parentCollectionId, bytes32 conditionId, uint indexSet) external view returns (bytes32) {\\n        return CTHelpers.getCollectionId(parentCollectionId, conditionId, indexSet);\\n    }\\n\\n    /// @dev Constructs a position ID from a collateral token and an outcome collection. These IDs are used as the ERC-1155 ID for this contract.\\n    /// @param collateralToken Collateral token which backs the position.\\n    /// @param collectionId ID of the outcome collection associated with this position.\\n    function getPositionId(IERC20 collateralToken, bytes32 collectionId) external pure returns (uint) {\\n        return CTHelpers.getPositionId(collateralToken, collectionId);\\n    }\\n}\\n\",\"keccak256\":\"0x11a610a3fa07ac8a59a09a76fdb944f058fdb06d3414fe49995595e68cd17d41\"},\"contracts/ERC1155/ERC1155.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\nimport \\\"./IERC1155.sol\\\";\\nimport \\\"./IERC1155TokenReceiver.sol\\\";\\nimport \\\"openzeppelin-solidity/contracts/math/SafeMath.sol\\\";\\nimport \\\"openzeppelin-solidity/contracts/utils/Address.sol\\\";\\nimport \\\"openzeppelin-solidity/contracts/introspection/ERC165.sol\\\";\\n\\n/**\\n * @title Standard ERC1155 token\\n *\\n * @dev Implementation of the basic standard multi-token.\\n * See https://eips.ethereum.org/EIPS/eip-1155\\n * Originally based on code by Enjin: https://github.com/enjin/erc-1155\\n */\\ncontract ERC1155 is ERC165, IERC1155\\n{\\n    using SafeMath for uint256;\\n    using Address for address;\\n\\n    // Mapping from token ID to owner balances\\n    mapping (uint256 => mapping(address => uint256)) private _balances;\\n\\n    // Mapping from owner to operator approvals\\n    mapping (address => mapping(address => bool)) private _operatorApprovals;\\n\\n    constructor()\\n        public\\n    {\\n        _registerInterface(\\n            ERC1155(0).safeTransferFrom.selector ^\\n            ERC1155(0).safeBatchTransferFrom.selector ^\\n            ERC1155(0).balanceOf.selector ^\\n            ERC1155(0).balanceOfBatch.selector ^\\n            ERC1155(0).setApprovalForAll.selector ^\\n            ERC1155(0).isApprovedForAll.selector\\n        );\\n    }\\n\\n    /**\\n        @dev Get the specified address' balance for token with specified ID.\\n        @param owner The address of the token holder\\n        @param id ID of the token\\n        @return The owner's balance of the token type requested\\n     */\\n    function balanceOf(address owner, uint256 id) public view returns (uint256) {\\n        require(owner != address(0), \\\"ERC1155: balance query for the zero address\\\");\\n        return _balances[id][owner];\\n    }\\n\\n    /**\\n        @dev Get the balance of multiple account/token pairs\\n        @param owners The addresses of the token holders\\n        @param ids IDs of the tokens\\n        @return Balances for each owner and token id pair\\n     */\\n    function balanceOfBatch(\\n        address[] memory owners,\\n        uint256[] memory ids\\n    )\\n        public\\n        view\\n        returns (uint256[] memory)\\n    {\\n        require(owners.length == ids.length, \\\"ERC1155: owners and IDs must have same lengths\\\");\\n\\n        uint256[] memory batchBalances = new uint256[](owners.length);\\n\\n        for (uint256 i = 0; i < owners.length; ++i) {\\n            require(owners[i] != address(0), \\\"ERC1155: some address in batch balance query is zero\\\");\\n            batchBalances[i] = _balances[ids[i]][owners[i]];\\n        }\\n\\n        return batchBalances;\\n    }\\n\\n    /**\\n     * @dev Sets or unsets the approval of a given operator\\n     * An operator is allowed to transfer all tokens of the sender on their behalf\\n     * @param operator address to set the approval\\n     * @param approved representing the status of the approval to be set\\n     */\\n    function setApprovalForAll(address operator, bool approved) external {\\n        _operatorApprovals[msg.sender][operator] = approved;\\n        emit ApprovalForAll(msg.sender, operator, approved);\\n    }\\n\\n    /**\\n        @notice Queries the approval status of an operator for a given owner.\\n        @param owner     The owner of the Tokens\\n        @param operator  Address of authorized operator\\n        @return           True if the operator is approved, false if not\\n    */\\n    function isApprovedForAll(address owner, address operator) external view returns (bool) {\\n        return _operatorApprovals[owner][operator];\\n    }\\n\\n    /**\\n        @dev Transfers `value` amount of an `id` from the `from` address to the `to` address specified.\\n        Caller must be approved to manage the tokens being transferred out of the `from` account.\\n        If `to` is a smart contract, will call `onERC1155Received` on `to` and act appropriately.\\n        @param from Source address\\n        @param to Target address\\n        @param id ID of the token type\\n        @param value Transfer amount\\n        @param data Data forwarded to `onERC1155Received` if `to` is a contract receiver\\n    */\\n    function safeTransferFrom(\\n        address from,\\n        address to,\\n        uint256 id,\\n        uint256 value,\\n        bytes calldata data\\n    )\\n        external\\n    {\\n        require(to != address(0), \\\"ERC1155: target address must be non-zero\\\");\\n        require(\\n            from == msg.sender || _operatorApprovals[from][msg.sender] == true,\\n            \\\"ERC1155: need operator approval for 3rd party transfers.\\\"\\n        );\\n\\n        _balances[id][from] = _balances[id][from].sub(value);\\n        _balances[id][to] = value.add(_balances[id][to]);\\n\\n        emit TransferSingle(msg.sender, from, to, id, value);\\n\\n        _doSafeTransferAcceptanceCheck(msg.sender, from, to, id, value, data);\\n    }\\n\\n    /**\\n        @dev Transfers `values` amount(s) of `ids` from the `from` address to the\\n        `to` address specified. Caller must be approved to manage the tokens being\\n        transferred out of the `from` account. If `to` is a smart contract, will\\n        call `onERC1155BatchReceived` on `to` and act appropriately.\\n        @param from Source address\\n        @param to Target address\\n        @param ids IDs of each token type\\n        @param values Transfer amounts per token type\\n        @param data Data forwarded to `onERC1155Received` if `to` is a contract receiver\\n    */\\n    function safeBatchTransferFrom(\\n        address from,\\n        address to,\\n        uint256[] calldata ids,\\n        uint256[] calldata values,\\n        bytes calldata data\\n    )\\n        external\\n    {\\n        require(ids.length == values.length, \\\"ERC1155: IDs and values must have same lengths\\\");\\n        require(to != address(0), \\\"ERC1155: target address must be non-zero\\\");\\n        require(\\n            from == msg.sender || _operatorApprovals[from][msg.sender] == true,\\n            \\\"ERC1155: need operator approval for 3rd party transfers.\\\"\\n        );\\n\\n        for (uint256 i = 0; i < ids.length; ++i) {\\n            uint256 id = ids[i];\\n            uint256 value = values[i];\\n\\n            _balances[id][from] = _balances[id][from].sub(value);\\n            _balances[id][to] = value.add(_balances[id][to]);\\n        }\\n\\n        emit TransferBatch(msg.sender, from, to, ids, values);\\n\\n        _doSafeBatchTransferAcceptanceCheck(msg.sender, from, to, ids, values, data);\\n    }\\n\\n    /**\\n     * @dev Internal function to mint an amount of a token with the given ID\\n     * @param to The address that will own the minted token\\n     * @param id ID of the token to be minted\\n     * @param value Amount of the token to be minted\\n     * @param data Data forwarded to `onERC1155Received` if `to` is a contract receiver\\n     */\\n    function _mint(address to, uint256 id, uint256 value, bytes memory data) internal {\\n        require(to != address(0), \\\"ERC1155: mint to the zero address\\\");\\n\\n        _balances[id][to] = value.add(_balances[id][to]);\\n        emit TransferSingle(msg.sender, address(0), to, id, value);\\n\\n        _doSafeTransferAcceptanceCheck(msg.sender, address(0), to, id, value, data);\\n    }\\n\\n    /**\\n     * @dev Internal function to batch mint amounts of tokens with the given IDs\\n     * @param to The address that will own the minted token\\n     * @param ids IDs of the tokens to be minted\\n     * @param values Amounts of the tokens to be minted\\n     * @param data Data forwarded to `onERC1155Received` if `to` is a contract receiver\\n     */\\n    function _batchMint(address to, uint256[] memory ids, uint256[] memory values, bytes memory data) internal {\\n        require(to != address(0), \\\"ERC1155: batch mint to the zero address\\\");\\n        require(ids.length == values.length, \\\"ERC1155: IDs and values must have same lengths\\\");\\n\\n        for(uint i = 0; i < ids.length; i++) {\\n            _balances[ids[i]][to] = values[i].add(_balances[ids[i]][to]);\\n        }\\n\\n        emit TransferBatch(msg.sender, address(0), to, ids, values);\\n\\n        _doSafeBatchTransferAcceptanceCheck(msg.sender, address(0), to, ids, values, data);\\n    }\\n\\n    /**\\n     * @dev Internal function to burn an amount of a token with the given ID\\n     * @param owner Account which owns the token to be burnt\\n     * @param id ID of the token to be burnt\\n     * @param value Amount of the token to be burnt\\n     */\\n    function _burn(address owner, uint256 id, uint256 value) internal {\\n        _balances[id][owner] = _balances[id][owner].sub(value);\\n        emit TransferSingle(msg.sender, owner, address(0), id, value);\\n    }\\n\\n    /**\\n     * @dev Internal function to batch burn an amounts of tokens with the given IDs\\n     * @param owner Account which owns the token to be burnt\\n     * @param ids IDs of the tokens to be burnt\\n     * @param values Amounts of the tokens to be burnt\\n     */\\n    function _batchBurn(address owner, uint256[] memory ids, uint256[] memory values) internal {\\n        require(ids.length == values.length, \\\"ERC1155: IDs and values must have same lengths\\\");\\n\\n        for(uint i = 0; i < ids.length; i++) {\\n            _balances[ids[i]][owner] = _balances[ids[i]][owner].sub(values[i]);\\n        }\\n\\n        emit TransferBatch(msg.sender, owner, address(0), ids, values);\\n    }\\n\\n    function _doSafeTransferAcceptanceCheck(\\n        address operator,\\n        address from,\\n        address to,\\n        uint256 id,\\n        uint256 value,\\n        bytes memory data\\n    )\\n        internal\\n    {\\n        if(to.isContract()) {\\n            require(\\n                IERC1155TokenReceiver(to).onERC1155Received(operator, from, id, value, data) ==\\n                    IERC1155TokenReceiver(to).onERC1155Received.selector,\\n                \\\"ERC1155: got unknown value from onERC1155Received\\\"\\n            );\\n        }\\n    }\\n\\n    function _doSafeBatchTransferAcceptanceCheck(\\n        address operator,\\n        address from,\\n        address to,\\n        uint256[] memory ids,\\n        uint256[] memory values,\\n        bytes memory data\\n    )\\n        internal\\n    {\\n        if(to.isContract()) {\\n            require(\\n                IERC1155TokenReceiver(to).onERC1155BatchReceived(operator, from, ids, values, data) == IERC1155TokenReceiver(to).onERC1155BatchReceived.selector,\\n                \\\"ERC1155: got unknown value from onERC1155BatchReceived\\\"\\n            );\\n        }\\n    }\\n}\\n\",\"keccak256\":\"0xd8e6583f45a98380ff10a5656a7ae7ba6a275e0d051043e5842f0d541abd7caa\"},\"contracts/ERC1155/IERC1155.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\nimport \\\"openzeppelin-solidity/contracts/introspection/IERC165.sol\\\";\\n\\n/**\\n    @title ERC-1155 Multi Token Standard basic interface\\n    @dev See https://eips.ethereum.org/EIPS/eip-1155\\n */\\ncontract IERC1155 is IERC165 {\\n    event TransferSingle(address indexed operator, address indexed from, address indexed to, uint256 id, uint256 value);\\n\\n    event TransferBatch(address indexed operator, address indexed from, address indexed to, uint256[] ids, uint256[] values);\\n\\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\\n\\n    event URI(string value, uint256 indexed id);\\n\\n    function balanceOf(address owner, uint256 id) public view returns (uint256);\\n\\n    function balanceOfBatch(address[] memory owners, uint256[] memory ids) public view returns (uint256[] memory);\\n\\n    function setApprovalForAll(address operator, bool approved) external;\\n\\n    function isApprovedForAll(address owner, address operator) external view returns (bool);\\n\\n    function safeTransferFrom(address from, address to, uint256 id, uint256 value, bytes calldata data) external;\\n\\n    function safeBatchTransferFrom(address from, address to, uint256[] calldata ids, uint256[] calldata values, bytes calldata data) external;\\n}\\n\",\"keccak256\":\"0x4971631d7de74464fed3e0abac04553e917be5e8cd10b3f825e2e7c39ccc2734\"},\"contracts/ERC1155/IERC1155TokenReceiver.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\nimport \\\"openzeppelin-solidity/contracts/introspection/IERC165.sol\\\";\\n\\n/**\\n    @title ERC-1155 Multi Token Receiver Interface\\n    @dev See https://eips.ethereum.org/EIPS/eip-1155\\n*/\\ncontract IERC1155TokenReceiver is IERC165 {\\n\\n    /**\\n        @dev Handles the receipt of a single ERC1155 token type. This function is\\n        called at the end of a `safeTransferFrom` after the balance has been updated.\\n        To accept the transfer, this must return\\n        `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))`\\n        (i.e. 0xf23a6e61, or its own function selector).\\n        @param operator The address which initiated the transfer (i.e. msg.sender)\\n        @param from The address which previously owned the token\\n        @param id The ID of the token being transferred\\n        @param value The amount of tokens being transferred\\n        @param data Additional data with no specified format\\n        @return `bytes4(keccak256(\\\"onERC1155Received(address,address,uint256,uint256,bytes)\\\"))` if transfer is allowed\\n    */\\n    function onERC1155Received(\\n        address operator,\\n        address from,\\n        uint256 id,\\n        uint256 value,\\n        bytes calldata data\\n    )\\n        external\\n        returns(bytes4);\\n\\n    /**\\n        @dev Handles the receipt of a multiple ERC1155 token types. This function\\n        is called at the end of a `safeBatchTransferFrom` after the balances have\\n        been updated. To accept the transfer(s), this must return\\n        `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))`\\n        (i.e. 0xbc197c81, or its own function selector).\\n        @param operator The address which initiated the batch transfer (i.e. msg.sender)\\n        @param from The address which previously owned the token\\n        @param ids An array containing ids of each token being transferred (order and length must match values array)\\n        @param values An array containing amounts of each token being transferred (order and length must match ids array)\\n        @param data Additional data with no specified format\\n        @return `bytes4(keccak256(\\\"onERC1155BatchReceived(address,address,uint256[],uint256[],bytes)\\\"))` if transfer is allowed\\n    */\\n    function onERC1155BatchReceived(\\n        address operator,\\n        address from,\\n        uint256[] calldata ids,\\n        uint256[] calldata values,\\n        bytes calldata data\\n    )\\n        external\\n        returns(bytes4);\\n}\\n\",\"keccak256\":\"0xca815b5ca57df8f1056b962c2728d6a1e56fc7d9a7869ccee8f5a1ac6075b75d\"},\"openzeppelin-solidity/contracts/introspection/ERC165.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\nimport \\\"./IERC165.sol\\\";\\n\\n/**\\n * @dev Implementation of the `IERC165` interface.\\n *\\n * Contracts may inherit from this and call `_registerInterface` to declare\\n * their support of an interface.\\n */\\ncontract ERC165 is IERC165 {\\n    /*\\n     * bytes4(keccak256('supportsInterface(bytes4)')) == 0x01ffc9a7\\n     */\\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\\n\\n    /**\\n     * @dev Mapping of interface ids to whether or not it's supported.\\n     */\\n    mapping(bytes4 => bool) private _supportedInterfaces;\\n\\n    constructor () internal {\\n        // Derived contracts need only register support for their own interfaces,\\n        // we register support for ERC165 itself here\\n        _registerInterface(_INTERFACE_ID_ERC165);\\n    }\\n\\n    /**\\n     * @dev See `IERC165.supportsInterface`.\\n     *\\n     * Time complexity O(1), guaranteed to always use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool) {\\n        return _supportedInterfaces[interfaceId];\\n    }\\n\\n    /**\\n     * @dev Registers the contract as an implementer of the interface defined by\\n     * `interfaceId`. Support of the actual ERC165 interface is automatic and\\n     * registering its interface id is not required.\\n     *\\n     * See `IERC165.supportsInterface`.\\n     *\\n     * Requirements:\\n     *\\n     * - `interfaceId` cannot be the ERC165 invalid interface (`0xffffffff`).\\n     */\\n    function _registerInterface(bytes4 interfaceId) internal {\\n        require(interfaceId != 0xffffffff, \\\"ERC165: invalid interface id\\\");\\n        _supportedInterfaces[interfaceId] = true;\\n    }\\n}\\n\",\"keccak256\":\"0xac2eacd7e7762e275442f28f21d821544df5aae2ed7698af13be8c41b7005e2e\"},\"openzeppelin-solidity/contracts/introspection/IERC165.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\n/**\\n * @dev Interface of the ERC165 standard, as defined in the\\n * [EIP](https://eips.ethereum.org/EIPS/eip-165).\\n *\\n * Implementers can declare support of contract interfaces, which can then be\\n * queried by others (`ERC165Checker`).\\n *\\n * For an implementation, see `ERC165`.\\n */\\ninterface IERC165 {\\n    /**\\n     * @dev Returns true if this contract implements the interface defined by\\n     * `interfaceId`. See the corresponding\\n     * [EIP section](https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified)\\n     * to learn more about how these ids are created.\\n     *\\n     * This function call must use less than 30 000 gas.\\n     */\\n    function supportsInterface(bytes4 interfaceId) external view returns (bool);\\n}\\n\",\"keccak256\":\"0x661553e43d7c4fbb2de504e5999fd5c104d367488350ed5bf023031bd1ba5ac5\"},\"openzeppelin-solidity/contracts/math/SafeMath.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\n/**\\n * @dev Wrappers over Solidity's arithmetic operations with added overflow\\n * checks.\\n *\\n * Arithmetic operations in Solidity wrap on overflow. This can easily result\\n * in bugs, because programmers usually assume that an overflow raises an\\n * error, which is the standard behavior in high level programming languages.\\n * `SafeMath` restores this intuition by reverting the transaction when an\\n * operation overflows.\\n *\\n * Using this library instead of the unchecked operations eliminates an entire\\n * class of bugs, so it's recommended to use it always.\\n */\\nlibrary SafeMath {\\n    /**\\n     * @dev Returns the addition of two unsigned integers, reverting on\\n     * overflow.\\n     *\\n     * Counterpart to Solidity's `+` operator.\\n     *\\n     * Requirements:\\n     * - Addition cannot overflow.\\n     */\\n    function add(uint256 a, uint256 b) internal pure returns (uint256) {\\n        uint256 c = a + b;\\n        require(c >= a, \\\"SafeMath: addition overflow\\\");\\n\\n        return c;\\n    }\\n\\n    /**\\n     * @dev Returns the subtraction of two unsigned integers, reverting on\\n     * overflow (when the result is negative).\\n     *\\n     * Counterpart to Solidity's `-` operator.\\n     *\\n     * Requirements:\\n     * - Subtraction cannot overflow.\\n     */\\n    function sub(uint256 a, uint256 b) internal pure returns (uint256) {\\n        require(b <= a, \\\"SafeMath: subtraction overflow\\\");\\n        uint256 c = a - b;\\n\\n        return c;\\n    }\\n\\n    /**\\n     * @dev Returns the multiplication of two unsigned integers, reverting on\\n     * overflow.\\n     *\\n     * Counterpart to Solidity's `*` operator.\\n     *\\n     * Requirements:\\n     * - Multiplication cannot overflow.\\n     */\\n    function mul(uint256 a, uint256 b) internal pure returns (uint256) {\\n        // Gas optimization: this is cheaper than requiring 'a' not being zero, but the\\n        // benefit is lost if 'b' is also tested.\\n        // See: https://github.com/OpenZeppelin/openzeppelin-solidity/pull/522\\n        if (a == 0) {\\n            return 0;\\n        }\\n\\n        uint256 c = a * b;\\n        require(c / a == b, \\\"SafeMath: multiplication overflow\\\");\\n\\n        return c;\\n    }\\n\\n    /**\\n     * @dev Returns the integer division of two unsigned integers. Reverts on\\n     * division by zero. The result is rounded towards zero.\\n     *\\n     * Counterpart to Solidity's `/` operator. Note: this function uses a\\n     * `revert` opcode (which leaves remaining gas untouched) while Solidity\\n     * uses an invalid opcode to revert (consuming all remaining gas).\\n     *\\n     * Requirements:\\n     * - The divisor cannot be zero.\\n     */\\n    function div(uint256 a, uint256 b) internal pure returns (uint256) {\\n        // Solidity only automatically asserts when dividing by 0\\n        require(b > 0, \\\"SafeMath: division by zero\\\");\\n        uint256 c = a / b;\\n        // assert(a == b * c + a % b); // There is no case in which this doesn't hold\\n\\n        return c;\\n    }\\n\\n    /**\\n     * @dev Returns the remainder of dividing two unsigned integers. (unsigned integer modulo),\\n     * Reverts when dividing by zero.\\n     *\\n     * Counterpart to Solidity's `%` operator. This function uses a `revert`\\n     * opcode (which leaves remaining gas untouched) while Solidity uses an\\n     * invalid opcode to revert (consuming all remaining gas).\\n     *\\n     * Requirements:\\n     * - The divisor cannot be zero.\\n     */\\n    function mod(uint256 a, uint256 b) internal pure returns (uint256) {\\n        require(b != 0, \\\"SafeMath: modulo by zero\\\");\\n        return a % b;\\n    }\\n}\\n\",\"keccak256\":\"0x4ccf2d7b51873db1ccfd54ca2adae5eac3b184f9699911ed4490438419f1c690\"},\"openzeppelin-solidity/contracts/token/ERC20/IERC20.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\n/**\\n * @dev Interface of the ERC20 standard as defined in the EIP. Does not include\\n * the optional functions; to access them see `ERC20Detailed`.\\n */\\ninterface IERC20 {\\n    /**\\n     * @dev Returns the amount of tokens in existence.\\n     */\\n    function totalSupply() external view returns (uint256);\\n\\n    /**\\n     * @dev Returns the amount of tokens owned by `account`.\\n     */\\n    function balanceOf(address account) external view returns (uint256);\\n\\n    /**\\n     * @dev Moves `amount` tokens from the caller's account to `recipient`.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a `Transfer` event.\\n     */\\n    function transfer(address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Returns the remaining number of tokens that `spender` will be\\n     * allowed to spend on behalf of `owner` through `transferFrom`. This is\\n     * zero by default.\\n     *\\n     * This value changes when `approve` or `transferFrom` are called.\\n     */\\n    function allowance(address owner, address spender) external view returns (uint256);\\n\\n    /**\\n     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * > Beware that changing an allowance with this method brings the risk\\n     * that someone may use both the old and the new allowance by unfortunate\\n     * transaction ordering. One possible solution to mitigate this race\\n     * condition is to first reduce the spender's allowance to 0 and set the\\n     * desired value afterwards:\\n     * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729\\n     *\\n     * Emits an `Approval` event.\\n     */\\n    function approve(address spender, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Moves `amount` tokens from `sender` to `recipient` using the\\n     * allowance mechanism. `amount` is then deducted from the caller's\\n     * allowance.\\n     *\\n     * Returns a boolean value indicating whether the operation succeeded.\\n     *\\n     * Emits a `Transfer` event.\\n     */\\n    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);\\n\\n    /**\\n     * @dev Emitted when `value` tokens are moved from one account (`from`) to\\n     * another (`to`).\\n     *\\n     * Note that `value` may be zero.\\n     */\\n    event Transfer(address indexed from, address indexed to, uint256 value);\\n\\n    /**\\n     * @dev Emitted when the allowance of a `spender` for an `owner` is set by\\n     * a call to `approve`. `value` is the new allowance.\\n     */\\n    event Approval(address indexed owner, address indexed spender, uint256 value);\\n}\\n\",\"keccak256\":\"0x90e8c2521653bbb1768b05889c5760031e688d9cd361f167489b89215e201b95\"},\"openzeppelin-solidity/contracts/utils/Address.sol\":{\"content\":\"pragma solidity ^0.5.0;\\n\\n/**\\n * @dev Collection of functions related to the address type,\\n */\\nlibrary Address {\\n    /**\\n     * @dev Returns true if `account` is a contract.\\n     *\\n     * This test is non-exhaustive, and there may be false-negatives: during the\\n     * execution of a contract's constructor, its address will be reported as\\n     * not containing a contract.\\n     *\\n     * > It is unsafe to assume that an address for which this function returns\\n     * false is an externally-owned account (EOA) and not a contract.\\n     */\\n    function isContract(address account) internal view returns (bool) {\\n        // This method relies in extcodesize, which returns 0 for contracts in\\n        // construction, since the code is only stored at the end of the\\n        // constructor execution.\\n\\n        uint256 size;\\n        // solhint-disable-next-line no-inline-assembly\\n        assembly { size := extcodesize(account) }\\n        return size > 0;\\n    }\\n}\\n\",\"keccak256\":\"0xf3358e5819ca73357abd6c90bdfffd0474af54364897f6b3e3234c4b71fbe9a1\"}},\"version\":1}",
+  "bytecode": "0x6080604052620000387f01ffc9a70000000000000000000000000000000000000000000000000000000064010000000062000072810204565b6200006c7fd9b67a260000000000000000000000000000000000000000000000000000000064010000000062000072810204565b62000141565b7fffffffff0000000000000000000000000000000000000000000000000000000080821614156200010457604080517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601c60248201527f4552433136353a20696e76616c696420696e7465726661636520696400000000604482015290519081900360640190fd5b7fffffffff00000000000000000000000000000000000000000000000000000000166000908152602081905260409020805460ff19166001179055565b613e8580620001516000396000f3fe6080604052600436106100f4577c01000000000000000000000000000000000000000000000000000000006000350462fdd58e81146100f957806301b7037c1461014457806301ffc9a7146101df5780630504c814146102275780632eb2c2d61461025757806339dd7530146103915780634e1273f4146103ca57806372ce42751461054e578063852c6ae2146105e7578063856296f7146106265780639e7212ad1461065c578063a22cb465146106f5578063c49298ac14610730578063d42dc0c2146107b4578063d96ee754146107de578063dd34de671461081d578063e985e9c514610847578063f242432a14610882575b600080fd5b34801561010557600080fd5b506101326004803603604081101561011c57600080fd5b50600160a060020a038135169060200135610924565b60408051918252519081900360200190f35b34801561015057600080fd5b506101dd6004803603608081101561016757600080fd5b600160a060020a03823516916020810135916040820135919081019060808101606082013564010000000081111561019e57600080fd5b8201836020820111156101b057600080fd5b803590602001918460208302840111640100000000831117156101d257600080fd5b5090925090506109d7565b005b3480156101eb57600080fd5b506102136004803603602081101561020257600080fd5b5035600160e060020a031916610e11565b604080519115158252519081900360200190f35b34801561023357600080fd5b506101326004803603604081101561024a57600080fd5b5080359060200135610e30565b34801561026357600080fd5b506101dd600480360360a081101561027a57600080fd5b600160a060020a0382358116926020810135909116918101906060810160408201356401000000008111156102ae57600080fd5b8201836020820111156102c057600080fd5b803590602001918460208302840111640100000000831117156102e257600080fd5b91939092909160208101903564010000000081111561030057600080fd5b82018360208201111561031257600080fd5b8035906020019184602083028401116401000000008311171561033457600080fd5b91939092909160208101903564010000000081111561035257600080fd5b82018360208201111561036457600080fd5b8035906020019184600183028401116401000000008311171561038657600080fd5b509092509050610e60565b34801561039d57600080fd5b50610132600480360360408110156103b457600080fd5b50600160a060020a03813516906020013561129e565b3480156103d657600080fd5b506104fe600480360360408110156103ed57600080fd5b81019060208101813564010000000081111561040857600080fd5b82018360208201111561041a57600080fd5b8035906020019184602083028401116401000000008311171561043c57600080fd5b919080806020026020016040519081016040528093929190818152602001838360200280828437600092019190915250929594936020810193503591505064010000000081111561048c57600080fd5b82018360208201111561049e57600080fd5b803590602001918460208302840111640100000000831117156104c057600080fd5b9190808060200260200160405190810160405280939291908181526020018383602002808284376000920191909152509295506112b1945050505050565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561053a578181015183820152602001610522565b505050509050019250505060405180910390f35b34801561055a57600080fd5b506101dd600480360360a081101561057157600080fd5b600160a060020a0382351691602081013591604082013591908101906080810160608201356401000000008111156105a857600080fd5b8201836020820111156105ba57600080fd5b803590602001918460208302840111640100000000831117156105dc57600080fd5b91935091503561148a565b3480156105f357600080fd5b506101326004803603606081101561060a57600080fd5b50600160a060020a0381351690602081013590604001356118f5565b34801561063257600080fd5b506101326004803603606081101561064957600080fd5b508035906020810135906040013561190a565b34801561066857600080fd5b506101dd600480360360a081101561067f57600080fd5b600160a060020a0382351691602081013591604082013591908101906080810160608201356401000000008111156106b657600080fd5b8201836020820111156106c857600080fd5b803590602001918460208302840111640100000000831117156106ea57600080fd5b919350915035611917565b34801561070157600080fd5b506101dd6004803603604081101561071857600080fd5b50600160a060020a0381351690602001351515611d56565b34801561073c57600080fd5b506101dd6004803603604081101561075357600080fd5b8135919081019060408101602082013564010000000081111561077557600080fd5b82018360208201111561078757600080fd5b803590602001918460208302840111640100000000831117156107a957600080fd5b509092509050611dc4565b3480156107c057600080fd5b50610132600480360360208110156107d757600080fd5b5035612101565b3480156107ea57600080fd5b506101dd6004803603606081101561080157600080fd5b50600160a060020a038135169060208101359060400135612113565b34801561082957600080fd5b506101326004803603602081101561084057600080fd5b50356122f7565b34801561085357600080fd5b506102136004803603604081101561086a57600080fd5b50600160a060020a0381358116916020013516612309565b34801561088e57600080fd5b506101dd600480360360a08110156108a557600080fd5b600160a060020a03823581169260208101359091169160408201359160608101359181019060a0810160808201356401000000008111156108e557600080fd5b8201836020820111156108f757600080fd5b8035906020019184600183028401116401000000008311171561091957600080fd5b509092509050612337565b6000600160a060020a03831615156109ac576040805160e560020a62461bcd02815260206004820152602b60248201527f455243313135353a2062616c616e636520717565727920666f7220746865207a60448201527f65726f2061646472657373000000000000000000000000000000000000000000606482015290519081900360840190fd5b506000818152600160209081526040808320600160a060020a03861684529091529020545b92915050565b600083815260046020526040812054908111610a63576040805160e560020a62461bcd02815260206004820152602560248201527f726573756c7420666f7220636f6e646974696f6e206e6f74207265636569766560448201527f6420796574000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600084815260036020526040812054908111610ac9576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b6000600019600283900a01815b85811015610c33576000878783818110610aec57fe5b905060200201359050600081118015610b0457508281105b1515610b5a576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b6000610b708c610b6b8d8d86612595565b612932565b90506000805b87811015610bce57600281900a841615610bc65760008c81526003602052604090208054610bc3919083908110610ba957fe5b90600052602060002001548361297c90919063ffffffff16565b91505b600101610b76565b506000610bdb3384610924565b90506000811115610c2357610c16610c098a610bfd848663ffffffff6129d916565b9063ffffffff612a7516565b889063ffffffff61297c16565b9650610c23338483612ae4565b505060019092019150610ad69050565b506000821115610d7e57871515610d5957604080517fa9059cbb000000000000000000000000000000000000000000000000000000008152336004820152602481018490529051600160a060020a038b169163a9059cbb9160448083019260209291908290030181600087803b158015610cac57600080fd5b505af1158015610cc0573d6000803e3d6000fd5b505050506040513d6020811015610cd657600080fd5b50511515610d54576040805160e560020a62461bcd02815260206004820152602b60248201527f636f756c64206e6f74207472616e73666572207061796f757420746f206d657360448201527f736167652073656e646572000000000000000000000000000000000000000000606482015290519081900360840190fd5b610d7e565b610d7e33610d678b8b612932565b846020604051908101604052806000815250612b7f565b8789600160a060020a031633600160a060020a03167f2682012a4a4f1973119f1c9b90745d1bd91fa2bab387344f044cb3586864d18d8a8a8a8860405180858152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a4505050505050505050565b600160e060020a03191660009081526020819052604090205460ff1690565b600360205281600052604060002081815481101515610e4b57fe5b90600052602060002001600091509150505481565b848314610ecb576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b600160a060020a0387161515610f51576040805160e560020a62461bcd02815260206004820152602860248201527f455243313135353a207461726765742061646472657373206d7573742062652060448201527f6e6f6e2d7a65726f000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600160a060020a038816331480610f905750600160a060020a038816600090815260026020908152604080832033845290915290205460ff1615156001145b151561100c576040805160e560020a62461bcd02815260206004820152603860248201527f455243313135353a206e656564206f70657261746f7220617070726f76616c2060448201527f666f7220337264207061727479207472616e73666572732e0000000000000000606482015290519081900360840190fd5b60005b8581101561113e57600087878381811061102557fe5b9050602002013590506000868684818110151561103e57fe5b905060200201359050611090816001600085815260200190815260200160002060008e600160a060020a0316600160a060020a0316815260200190815260200160002054612cae90919063ffffffff16565b6001600084815260200190815260200160002060008d600160a060020a0316600160a060020a03168152602001908152602001600020819055506111136001600084815260200190815260200160002060008c600160a060020a0316600160a060020a03168152602001908152602001600020548261297c90919063ffffffff16565b6000928352600160208181526040808620600160a060020a038f16875290915290932055500161100f565b5086600160a060020a031688600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb898989896040518080602001806020018381038352878782818152602001925060200280828437600083820152601f01601f19169091018481038352858152602090810191508690860280828437600083820152604051601f909101601f19169092018290039850909650505050505050a461129433898989898080602002602001604051908101604052809392919081815260200183836020028082843760009201919091525050604080516020808d0282810182019093528c82529093508c92508b91829185019084908082843760009201919091525050604080516020601f8c018190048102820181019092528a815292508a9150899081908401838280828437600092019190915250612d0e92505050565b5050505050505050565b60006112aa8383612932565b9392505050565b8051825160609114611321576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a206f776e65727320616e6420494473206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b6060835160405190808252806020026020018201604052801561134e578160200160208202803883390190505b50905060005b845181101561148257845160009086908390811061136e57fe5b60209081029091010151600160a060020a031614156113fd576040805160e560020a62461bcd02815260206004820152603460248201527f455243313135353a20736f6d65206164647265737320696e206261746368206260448201527f616c616e6365207175657279206973207a65726f000000000000000000000000606482015290519081900360840190fd5b60016000858381518110151561140f57fe5b9060200190602002015181526020019081526020016000206000868381518110151561143757fe5b90602001906020020151600160a060020a0316600160a060020a0316815260200190815260200160002054828281518110151561147057fe5b60209081029091010152600101611354565b509392505050565b600182116114e2576040805160e560020a62461bcd02815260206004820181905260248201527f676f7420656d707479206f722073696e676c65746f6e20706172746974696f6e604482015290519081900360640190fd5b600084815260036020526040812054908111611548576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b604080518481526020808602820101909152600019600283900a01908190606090868015611580578160200160208202803883390190505b5090506060878790506040519080825280602002602001820160405280156115b2578160200160208202803883390190505b50905060005b878110156116e35760008989838181106115ce57fe5b9050602002013590506000811180156115e657508581105b151561163c576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b8481168114611695576040805160e560020a62461bcd02815260206004820152601660248201527f706172746974696f6e206e6f74206469736a6f696e7400000000000000000000604482015290519081900360640190fd5b938418936116a88d610b6b8e8e85612595565b84838151811015156116b657fe5b60209081029091010152825188908490849081106116d057fe5b60209081029091010152506001016115b8565b508215156118265789151561180d57604080517f23b872dd000000000000000000000000000000000000000000000000000000008152336004820152306024820152604481018890529051600160a060020a038d16916323b872dd9160648083019260209291908290030181600087803b15801561176057600080fd5b505af1158015611774573d6000803e3d6000fd5b505050506040513d602081101561178a57600080fd5b50511515611808576040805160e560020a62461bcd02815260206004820152602360248201527f636f756c64206e6f74207265636569766520636f6c6c61746572616c20746f6b60448201527f656e730000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b611821565b6118213361181b8d8d612932565b88612ae4565b61183b565b61183b3361181b8d610b6b8e8e898b18612595565b6118573383836020604051908101604052806000815250612f43565b888a33600160a060020a03167f2e6bb91f8cbcda0c93623c54d0403a43514fabc40084ec96b6d5379a747862988e8c8c8c6040518085600160a060020a0316600160a060020a03168152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a45050505050505050505050565b60006119028484846131eb565b949350505050565b6000611902848484612595565b6001821161196f576040805160e560020a62461bcd02815260206004820181905260248201527f676f7420656d707479206f722073696e676c65746f6e20706172746974696f6e604482015290519081900360640190fd5b6000848152600360205260408120549081116119d5576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b604080518481526020808602820101909152600019600283900a01908190606090868015611a0d578160200160208202803883390190505b509050606087879050604051908082528060200260200182016040528015611a3f578160200160208202803883390190505b50905060005b87811015611b70576000898983818110611a5b57fe5b905060200201359050600081118015611a7357508581105b1515611ac9576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b8481168114611b22576040805160e560020a62461bcd02815260206004820152601660248201527f706172746974696f6e206e6f74206469736a6f696e7400000000000000000000604482015290519081900360640190fd5b93841893611b358d610b6b8e8e85612595565b8483815181101515611b4357fe5b6020908102909101015282518890849084908110611b5d57fe5b6020908102909101015250600101611a45565b50611b7c33838361323e565b821515611ca357891515611c7957604080517fa9059cbb000000000000000000000000000000000000000000000000000000008152336004820152602481018890529051600160a060020a038d169163a9059cbb9160448083019260209291908290030181600087803b158015611bf257600080fd5b505af1158015611c06573d6000803e3d6000fd5b505050506040513d6020811015611c1c57600080fd5b50511515611c74576040805160e560020a62461bcd02815260206004820181905260248201527f636f756c64206e6f742073656e6420636f6c6c61746572616c20746f6b656e73604482015290519081900360640190fd5b611c9e565b611c9e33611c878d8d612932565b886020604051908101604052806000815250612b7f565b611cb8565b611cb833611c878d610b6b8e8e898b18612595565b888a33600160a060020a03167f6f13ca62553fcc2bcd2372180a43949c1e4cebba603901ede2f4e14f36b282ca8e8c8c8c6040518085600160a060020a0316600160a060020a03168152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a45050505050505050505050565b336000818152600260209081526040808320600160a060020a03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b8060018111611e43576040805160e560020a62461bcd02815260206004820152602a60248201527f74686572652073686f756c64206265206d6f7265207468616e206f6e65206f7560448201527f74636f6d6520736c6f7400000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000611e503386846131eb565b6000818152600360205260409020549091508214611eb8576040805160e560020a62461bcd02815260206004820152601f60248201527f636f6e646974696f6e206e6f74207072657061726564206f7220666f756e6400604482015290519081900360640190fd5b60008181526004602052604090205415611f1c576040805160e560020a62461bcd02815260206004820152601e60248201527f7061796f75742064656e6f6d696e61746f7220616c7265616479207365740000604482015290519081900360640190fd5b6000805b83811015612003576000868683818110611f3657fe5b905060200201359050611f52818461297c90919063ffffffff16565b600085815260036020526040902080549194509083908110611f7057fe5b60009182526020909120015415611fd1576040805160e560020a62461bcd02815260206004820152601c60248201527f7061796f7574206e756d657261746f7220616c72656164792073657400000000604482015290519081900360640190fd5b6000848152600360205260409020805482919084908110611fee57fe5b60009182526020909120015550600101611f20565b506000811161205c576040805160e560020a62461bcd02815260206004820152601460248201527f7061796f757420697320616c6c207a65726f6573000000000000000000000000604482015290519081900360640190fd5b60008281526004602090815260408083208490556003825291829020825186815291820183815281549383018490528993339387937fb44d84d3289691f71497564b85d4233648d9dbae8cbdbb4329f301c3a0185894938a939192916060830190849080156120ea57602002820191906000526020600020905b8154815260200190600101908083116120d6575b5050935050505060405180910390a4505050505050565b60009081526003602052604090205490565b61010081111561216d576040805160e560020a62461bcd02815260206004820152601660248201527f746f6f206d616e79206f7574636f6d6520736c6f747300000000000000000000604482015290519081900360640190fd5b600181116121eb576040805160e560020a62461bcd02815260206004820152602a60248201527f74686572652073686f756c64206265206d6f7265207468616e206f6e65206f7560448201527f74636f6d6520736c6f7400000000000000000000000000000000000000000000606482015290519081900360840190fd5b60006121f88484846131eb565b6000818152600360205260409020549091501561225f576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e20616c7265616479207072657061726564000000000000604482015290519081900360640190fd5b81604051908082528060200260200182016040528015612289578160200160208202803883390190505b50600082815260036020908152604090912082516122ad9391929190910190613db1565b508284600160a060020a0316827fab3760c3bd2bb38b5bcf54dc79802ed67338b4cf29f3054ded67ed24661e4177856040518082815260200191505060405180910390a450505050565b60046020526000908152604090205481565b600160a060020a03918216600090815260026020908152604080832093909416825291909152205460ff1690565b600160a060020a03851615156123bd576040805160e560020a62461bcd02815260206004820152602860248201527f455243313135353a207461726765742061646472657373206d7573742062652060448201527f6e6f6e2d7a65726f000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600160a060020a0386163314806123fc5750600160a060020a038616600090815260026020908152604080832033845290915290205460ff1615156001145b1515612478576040805160e560020a62461bcd02815260206004820152603860248201527f455243313135353a206e656564206f70657261746f7220617070726f76616c2060448201527f666f7220337264207061727479207472616e73666572732e0000000000000000606482015290519081900360840190fd5b6000848152600160209081526040808320600160a060020a038a1684529091529020546124ab908463ffffffff612cae16565b6000858152600160209081526040808320600160a060020a038b811685529252808320939093558716815220546124e390849061297c565b6000858152600160209081526040808320600160a060020a03808b16808652918452938290209490945580518881529182018790528051928a169233927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a461258d338787878787878080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525061344a92505050565b505050505050565b604080516020808201859052818301849052825180830384018152606090920190925280519101206000907f80000000000000000000000000000000000000000000000000000000000000008104151582805b600080516020613e1a833981519152600185089350600080516020613e1a8339815191526003600080516020613e1a83398151915280878809870908905061262f81613604565b915080600080516020613e1a83398151915283840914156125e857828015612658575060028206155b8061266f57508215801561266f5750600282066001145b156126885781600080516020613e1a8339815191520391505b8780156128f3577f4000000000000000000000000000000000000000000000000000000000000000810415159350600490810204600080516020613e1a8339815191526003600080516020613e1a83398151915280848509840908915060006126f083613604565b9050848015612700575060028106155b806127175750841580156127175750600281066001145b1561272d57600080516020613e1a833981519152035b82600080516020613e1a83398151915282830914612795576040805160e560020a62461bcd02815260206004820152601c60248201527f696e76616c696420706172656e7420636f6c6c656374696f6e20494400000000604482015290519081900360640190fd5b600060606006600160a060020a031688878686604051602001808581526020018481526020018381526020018281526020019450505050506040516020818303038152906040526040518082805190602001908083835b6020831061280b5780518252601f1990920191602091820191016127ec565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855afa9150503d806000811461286b576040519150601f19603f3d011682016040523d82523d6000602084013e612870565b606091505b50915091508115156128cc576040805160e560020a62461bcd02815260206004820152600c60248201527f6563616464206661696c65640000000000000000000000000000000000000000604482015290519081900360640190fd5b8080602001905160408110156128e157600080fd5b50805160209091015190985095505050505b6002830660011415612925577f4000000000000000000000000000000000000000000000000000000000000000851894505b5092979650505050505050565b60408051600160a060020a03939093166c01000000000000000000000000026020808501919091526034808501939093528151808503909301835260549093019052805191012090565b6000828201838110156112aa576040805160e560020a62461bcd02815260206004820152601b60248201527f536166654d6174683a206164646974696f6e206f766572666c6f770000000000604482015290519081900360640190fd5b60008215156129ea575060006109d1565b8282028284828115156129f957fe5b04146112aa576040805160e560020a62461bcd02815260206004820152602160248201527f536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f60448201527f7700000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000808211612ace576040805160e560020a62461bcd02815260206004820152601a60248201527f536166654d6174683a206469766973696f6e206279207a65726f000000000000604482015290519081900360640190fd5b60008284811515612adb57fe5b04949350505050565b6000828152600160209081526040808320600160a060020a0387168452909152902054612b17908263ffffffff612cae16565b6000838152600160209081526040808320600160a060020a038816808552908352818420949094558051868152918201859052805192939233927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a4505050565b600160a060020a0384161515612c05576040805160e560020a62461bcd02815260206004820152602160248201527f455243313135353a206d696e7420746f20746865207a65726f2061646472657360448201527f7300000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000838152600160209081526040808320600160a060020a0388168452909152902054612c3990839063ffffffff61297c16565b6000848152600160209081526040808320600160a060020a038916808552908352818420949094558051878152918201869052805133927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a4612ca83360008686868661344a565b50505050565b600082821115612d08576040805160e560020a62461bcd02815260206004820152601e60248201527f536166654d6174683a207375627472616374696f6e206f766572666c6f770000604482015290519081900360640190fd5b50900390565b612d2084600160a060020a0316613da9565b1561258d576040517fbc197c8100000000000000000000000000000000000000000000000000000000808252600160a060020a0388811660048401908152888216602485015260a060448501908152875160a4860152875193949289169363bc197c81938c938c938b938b938b9392916064820191608481019160c4909101906020808a01910280838360005b83811015612dc5578181015183820152602001612dad565b50505050905001848103835286818151815260200191508051906020019060200280838360005b83811015612e04578181015183820152602001612dec565b50505050905001848103825285818151815260200191508051906020019080838360005b83811015612e40578181015183820152602001612e28565b50505050905090810190601f168015612e6d5780820380516001836020036101000a031916815260200191505b5098505050505050505050602060405180830381600087803b158015612e9257600080fd5b505af1158015612ea6573d6000803e3d6000fd5b505050506040513d6020811015612ebc57600080fd5b5051600160e060020a0319161461258d576040805160e560020a62461bcd02815260206004820152603660248201527f455243313135353a20676f7420756e6b6e6f776e2076616c75652066726f6d2060448201527f6f6e455243313135354261746368526563656976656400000000000000000000606482015290519081900360840190fd5b600160a060020a0384161515612fc9576040805160e560020a62461bcd02815260206004820152602760248201527f455243313135353a206261746368206d696e7420746f20746865207a65726f2060448201527f6164647265737300000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b8151835114613036576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b60005b8351811015613101576130b760016000868481518110151561305757fe5b906020019060200201518152602001908152602001600020600087600160a060020a0316600160a060020a031681526020019081526020016000205484838151811015156130a157fe5b602090810290910101519063ffffffff61297c16565b6001600086848151811015156130c957fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a038a168252909252902055600101613039565b5083600160a060020a03166000600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb8686604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b83811015613188578181015183820152602001613170565b50505050905001838103825284818151815260200191508051906020019060200280838360005b838110156131c75781810151838201526020016131af565b5050505090500194505050505060405180910390a4612ca833600086868686612d0e565b604080516c01000000000000000000000000600160a060020a0386160260208083019190915260348201859052605480830185905283518084039091018152607490920190925280519101209392505050565b80518251146132ab576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b60005b825181101561336a5761332082828151811015156132c857fe5b906020019060200201516001600086858151811015156132e457fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a038a1682529092529020549063ffffffff612cae16565b60016000858481518110151561333257fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a03891682529092529020556001016132ae565b506000600160a060020a031683600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb8585604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156133f15781810151838201526020016133d9565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015613430578181015183820152602001613418565b5050505090500194505050505060405180910390a4505050565b61345c84600160a060020a0316613da9565b1561258d576040517ff23a6e6100000000000000000000000000000000000000000000000000000000808252600160a060020a03888116600484019081528882166024850152604484018790526064840186905260a060848501908152855160a4860152855193949289169363f23a6e61938c938c938b938b938b93929160c490910190602085019080838360005b838110156135035781810151838201526020016134eb565b50505050905090810190601f1680156135305780820380516001836020036101000a031916815260200191505b509650505050505050602060405180830381600087803b15801561355357600080fd5b505af1158015613567573d6000803e3d6000fd5b505050506040513d602081101561357d57600080fd5b5051600160e060020a0319161461258d576040805160e560020a62461bcd02815260206004820152603160248201527f455243313135353a20676f7420756e6b6e6f776e2076616c75652066726f6d2060448201527f6f6e455243313135355265636569766564000000000000000000000000000000606482015290519081900360840190fd5b6000600080516020613e1a833981519152808380099150808283098181820990508181840992508183850993508184840992508183840990508181820982818309905082818209905082818209905082818309915082828609945082858609915082828309915082828509935082848509915082828309915082828309915082828509915082828609945082858609915082828309915082828309915082828609915082828509935082848609945082858609915082828309915082828509935082848509915082828309905082818209905082818209905082818309915082828609945082858509935082848509915082828309915082828309915082828609945082858609915082828309915082828609915082828309915082828309915082828609915082828509935082848509915082828309905082818209905082818309905082818509905082818209905082818209905082818209905082818209905082818309915082828609945082858609915082828609915082828509935082848509915082828509915082828309915082828309905082818309905082818209838182099050838182099050838182099050838182099050838183099150508281830991508282860994508285850993508284850991508282860994508285850993508284860994508285850993508284860994508285860991508282860991508282830991508282850993508284850991508282830991508282860994508285850993508284850991508282850991508282860994508285850993508284860994508285850993508284850991508282830991508282850991508282860994508285860991508282860991508282850993508284860994508285850993508284860994508285850993508284850991508282850991508282830991508282860994508285850993508284850991508282850991508282830991508282860994508285860991508282830990508281820990508281830990508281860990508281820990508281820990508281820990508281820990508281830991508282850993508284860994508285850993508284860994508285860991508282860991508282830991508282830991508282830991508282860991508282850993508284850991508282850991508282830991508282860994508285860991508282860991508282850993508284860994508285860991508282830991508282850993508284860994508285860991508282850993508284860994508285850993508284850991508282850991508282860994508285850993508284850991508282850991508282830991508282830991508282860994508285860991508282830991508282830991508282860991508282850993508284860994508285860991508282860990508281820990508281820990508281830991508282850993508284850991508282860994508285850993508284860994508285850993508284860994508285850993508284850991508282850990508281850991508282830991508282830991508282820991505081818509935081848409925081838509935081848409925081838509935081848509905081818509905081818409925050808284099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808383099392505050565b6000903b1190565b828054828255906000526020600020908101928215613dec579160200282015b82811115613dec578251825591602001919060010190613dd1565b50613df8929150613dfc565b5090565b613e1691905b80821115613df85760008155600101613e02565b9056fe30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd47652073616d65206c656e67746873000000000000000000000000000000000000a165627a7a723058206543d05007da2466da91d2c810a1c021501cf9800905dc1c248a4e82308200430029",
+  "deployedBytecode": "0x6080604052600436106100f4577c01000000000000000000000000000000000000000000000000000000006000350462fdd58e81146100f957806301b7037c1461014457806301ffc9a7146101df5780630504c814146102275780632eb2c2d61461025757806339dd7530146103915780634e1273f4146103ca57806372ce42751461054e578063852c6ae2146105e7578063856296f7146106265780639e7212ad1461065c578063a22cb465146106f5578063c49298ac14610730578063d42dc0c2146107b4578063d96ee754146107de578063dd34de671461081d578063e985e9c514610847578063f242432a14610882575b600080fd5b34801561010557600080fd5b506101326004803603604081101561011c57600080fd5b50600160a060020a038135169060200135610924565b60408051918252519081900360200190f35b34801561015057600080fd5b506101dd6004803603608081101561016757600080fd5b600160a060020a03823516916020810135916040820135919081019060808101606082013564010000000081111561019e57600080fd5b8201836020820111156101b057600080fd5b803590602001918460208302840111640100000000831117156101d257600080fd5b5090925090506109d7565b005b3480156101eb57600080fd5b506102136004803603602081101561020257600080fd5b5035600160e060020a031916610e11565b604080519115158252519081900360200190f35b34801561023357600080fd5b506101326004803603604081101561024a57600080fd5b5080359060200135610e30565b34801561026357600080fd5b506101dd600480360360a081101561027a57600080fd5b600160a060020a0382358116926020810135909116918101906060810160408201356401000000008111156102ae57600080fd5b8201836020820111156102c057600080fd5b803590602001918460208302840111640100000000831117156102e257600080fd5b91939092909160208101903564010000000081111561030057600080fd5b82018360208201111561031257600080fd5b8035906020019184602083028401116401000000008311171561033457600080fd5b91939092909160208101903564010000000081111561035257600080fd5b82018360208201111561036457600080fd5b8035906020019184600183028401116401000000008311171561038657600080fd5b509092509050610e60565b34801561039d57600080fd5b50610132600480360360408110156103b457600080fd5b50600160a060020a03813516906020013561129e565b3480156103d657600080fd5b506104fe600480360360408110156103ed57600080fd5b81019060208101813564010000000081111561040857600080fd5b82018360208201111561041a57600080fd5b8035906020019184602083028401116401000000008311171561043c57600080fd5b919080806020026020016040519081016040528093929190818152602001838360200280828437600092019190915250929594936020810193503591505064010000000081111561048c57600080fd5b82018360208201111561049e57600080fd5b803590602001918460208302840111640100000000831117156104c057600080fd5b9190808060200260200160405190810160405280939291908181526020018383602002808284376000920191909152509295506112b1945050505050565b60408051602080825283518183015283519192839290830191858101910280838360005b8381101561053a578181015183820152602001610522565b505050509050019250505060405180910390f35b34801561055a57600080fd5b506101dd600480360360a081101561057157600080fd5b600160a060020a0382351691602081013591604082013591908101906080810160608201356401000000008111156105a857600080fd5b8201836020820111156105ba57600080fd5b803590602001918460208302840111640100000000831117156105dc57600080fd5b91935091503561148a565b3480156105f357600080fd5b506101326004803603606081101561060a57600080fd5b50600160a060020a0381351690602081013590604001356118f5565b34801561063257600080fd5b506101326004803603606081101561064957600080fd5b508035906020810135906040013561190a565b34801561066857600080fd5b506101dd600480360360a081101561067f57600080fd5b600160a060020a0382351691602081013591604082013591908101906080810160608201356401000000008111156106b657600080fd5b8201836020820111156106c857600080fd5b803590602001918460208302840111640100000000831117156106ea57600080fd5b919350915035611917565b34801561070157600080fd5b506101dd6004803603604081101561071857600080fd5b50600160a060020a0381351690602001351515611d56565b34801561073c57600080fd5b506101dd6004803603604081101561075357600080fd5b8135919081019060408101602082013564010000000081111561077557600080fd5b82018360208201111561078757600080fd5b803590602001918460208302840111640100000000831117156107a957600080fd5b509092509050611dc4565b3480156107c057600080fd5b50610132600480360360208110156107d757600080fd5b5035612101565b3480156107ea57600080fd5b506101dd6004803603606081101561080157600080fd5b50600160a060020a038135169060208101359060400135612113565b34801561082957600080fd5b506101326004803603602081101561084057600080fd5b50356122f7565b34801561085357600080fd5b506102136004803603604081101561086a57600080fd5b50600160a060020a0381358116916020013516612309565b34801561088e57600080fd5b506101dd600480360360a08110156108a557600080fd5b600160a060020a03823581169260208101359091169160408201359160608101359181019060a0810160808201356401000000008111156108e557600080fd5b8201836020820111156108f757600080fd5b8035906020019184600183028401116401000000008311171561091957600080fd5b509092509050612337565b6000600160a060020a03831615156109ac576040805160e560020a62461bcd02815260206004820152602b60248201527f455243313135353a2062616c616e636520717565727920666f7220746865207a60448201527f65726f2061646472657373000000000000000000000000000000000000000000606482015290519081900360840190fd5b506000818152600160209081526040808320600160a060020a03861684529091529020545b92915050565b600083815260046020526040812054908111610a63576040805160e560020a62461bcd02815260206004820152602560248201527f726573756c7420666f7220636f6e646974696f6e206e6f74207265636569766560448201527f6420796574000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600084815260036020526040812054908111610ac9576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b6000600019600283900a01815b85811015610c33576000878783818110610aec57fe5b905060200201359050600081118015610b0457508281105b1515610b5a576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b6000610b708c610b6b8d8d86612595565b612932565b90506000805b87811015610bce57600281900a841615610bc65760008c81526003602052604090208054610bc3919083908110610ba957fe5b90600052602060002001548361297c90919063ffffffff16565b91505b600101610b76565b506000610bdb3384610924565b90506000811115610c2357610c16610c098a610bfd848663ffffffff6129d916565b9063ffffffff612a7516565b889063ffffffff61297c16565b9650610c23338483612ae4565b505060019092019150610ad69050565b506000821115610d7e57871515610d5957604080517fa9059cbb000000000000000000000000000000000000000000000000000000008152336004820152602481018490529051600160a060020a038b169163a9059cbb9160448083019260209291908290030181600087803b158015610cac57600080fd5b505af1158015610cc0573d6000803e3d6000fd5b505050506040513d6020811015610cd657600080fd5b50511515610d54576040805160e560020a62461bcd02815260206004820152602b60248201527f636f756c64206e6f74207472616e73666572207061796f757420746f206d657360448201527f736167652073656e646572000000000000000000000000000000000000000000606482015290519081900360840190fd5b610d7e565b610d7e33610d678b8b612932565b846020604051908101604052806000815250612b7f565b8789600160a060020a031633600160a060020a03167f2682012a4a4f1973119f1c9b90745d1bd91fa2bab387344f044cb3586864d18d8a8a8a8860405180858152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a4505050505050505050565b600160e060020a03191660009081526020819052604090205460ff1690565b600360205281600052604060002081815481101515610e4b57fe5b90600052602060002001600091509150505481565b848314610ecb576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b600160a060020a0387161515610f51576040805160e560020a62461bcd02815260206004820152602860248201527f455243313135353a207461726765742061646472657373206d7573742062652060448201527f6e6f6e2d7a65726f000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600160a060020a038816331480610f905750600160a060020a038816600090815260026020908152604080832033845290915290205460ff1615156001145b151561100c576040805160e560020a62461bcd02815260206004820152603860248201527f455243313135353a206e656564206f70657261746f7220617070726f76616c2060448201527f666f7220337264207061727479207472616e73666572732e0000000000000000606482015290519081900360840190fd5b60005b8581101561113e57600087878381811061102557fe5b9050602002013590506000868684818110151561103e57fe5b905060200201359050611090816001600085815260200190815260200160002060008e600160a060020a0316600160a060020a0316815260200190815260200160002054612cae90919063ffffffff16565b6001600084815260200190815260200160002060008d600160a060020a0316600160a060020a03168152602001908152602001600020819055506111136001600084815260200190815260200160002060008c600160a060020a0316600160a060020a03168152602001908152602001600020548261297c90919063ffffffff16565b6000928352600160208181526040808620600160a060020a038f16875290915290932055500161100f565b5086600160a060020a031688600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb898989896040518080602001806020018381038352878782818152602001925060200280828437600083820152601f01601f19169091018481038352858152602090810191508690860280828437600083820152604051601f909101601f19169092018290039850909650505050505050a461129433898989898080602002602001604051908101604052809392919081815260200183836020028082843760009201919091525050604080516020808d0282810182019093528c82529093508c92508b91829185019084908082843760009201919091525050604080516020601f8c018190048102820181019092528a815292508a9150899081908401838280828437600092019190915250612d0e92505050565b5050505050505050565b60006112aa8383612932565b9392505050565b8051825160609114611321576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a206f776e65727320616e6420494473206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b6060835160405190808252806020026020018201604052801561134e578160200160208202803883390190505b50905060005b845181101561148257845160009086908390811061136e57fe5b60209081029091010151600160a060020a031614156113fd576040805160e560020a62461bcd02815260206004820152603460248201527f455243313135353a20736f6d65206164647265737320696e206261746368206260448201527f616c616e6365207175657279206973207a65726f000000000000000000000000606482015290519081900360840190fd5b60016000858381518110151561140f57fe5b9060200190602002015181526020019081526020016000206000868381518110151561143757fe5b90602001906020020151600160a060020a0316600160a060020a0316815260200190815260200160002054828281518110151561147057fe5b60209081029091010152600101611354565b509392505050565b600182116114e2576040805160e560020a62461bcd02815260206004820181905260248201527f676f7420656d707479206f722073696e676c65746f6e20706172746974696f6e604482015290519081900360640190fd5b600084815260036020526040812054908111611548576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b604080518481526020808602820101909152600019600283900a01908190606090868015611580578160200160208202803883390190505b5090506060878790506040519080825280602002602001820160405280156115b2578160200160208202803883390190505b50905060005b878110156116e35760008989838181106115ce57fe5b9050602002013590506000811180156115e657508581105b151561163c576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b8481168114611695576040805160e560020a62461bcd02815260206004820152601660248201527f706172746974696f6e206e6f74206469736a6f696e7400000000000000000000604482015290519081900360640190fd5b938418936116a88d610b6b8e8e85612595565b84838151811015156116b657fe5b60209081029091010152825188908490849081106116d057fe5b60209081029091010152506001016115b8565b508215156118265789151561180d57604080517f23b872dd000000000000000000000000000000000000000000000000000000008152336004820152306024820152604481018890529051600160a060020a038d16916323b872dd9160648083019260209291908290030181600087803b15801561176057600080fd5b505af1158015611774573d6000803e3d6000fd5b505050506040513d602081101561178a57600080fd5b50511515611808576040805160e560020a62461bcd02815260206004820152602360248201527f636f756c64206e6f74207265636569766520636f6c6c61746572616c20746f6b60448201527f656e730000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b611821565b6118213361181b8d8d612932565b88612ae4565b61183b565b61183b3361181b8d610b6b8e8e898b18612595565b6118573383836020604051908101604052806000815250612f43565b888a33600160a060020a03167f2e6bb91f8cbcda0c93623c54d0403a43514fabc40084ec96b6d5379a747862988e8c8c8c6040518085600160a060020a0316600160a060020a03168152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a45050505050505050505050565b60006119028484846131eb565b949350505050565b6000611902848484612595565b6001821161196f576040805160e560020a62461bcd02815260206004820181905260248201527f676f7420656d707479206f722073696e676c65746f6e20706172746974696f6e604482015290519081900360640190fd5b6000848152600360205260408120549081116119d5576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e206e6f7420707265706172656420796574000000000000604482015290519081900360640190fd5b604080518481526020808602820101909152600019600283900a01908190606090868015611a0d578160200160208202803883390190505b509050606087879050604051908082528060200260200182016040528015611a3f578160200160208202803883390190505b50905060005b87811015611b70576000898983818110611a5b57fe5b905060200201359050600081118015611a7357508581105b1515611ac9576040805160e560020a62461bcd02815260206004820152601560248201527f676f7420696e76616c696420696e646578207365740000000000000000000000604482015290519081900360640190fd5b8481168114611b22576040805160e560020a62461bcd02815260206004820152601660248201527f706172746974696f6e206e6f74206469736a6f696e7400000000000000000000604482015290519081900360640190fd5b93841893611b358d610b6b8e8e85612595565b8483815181101515611b4357fe5b6020908102909101015282518890849084908110611b5d57fe5b6020908102909101015250600101611a45565b50611b7c33838361323e565b821515611ca357891515611c7957604080517fa9059cbb000000000000000000000000000000000000000000000000000000008152336004820152602481018890529051600160a060020a038d169163a9059cbb9160448083019260209291908290030181600087803b158015611bf257600080fd5b505af1158015611c06573d6000803e3d6000fd5b505050506040513d6020811015611c1c57600080fd5b50511515611c74576040805160e560020a62461bcd02815260206004820181905260248201527f636f756c64206e6f742073656e6420636f6c6c61746572616c20746f6b656e73604482015290519081900360640190fd5b611c9e565b611c9e33611c878d8d612932565b886020604051908101604052806000815250612b7f565b611cb8565b611cb833611c878d610b6b8e8e898b18612595565b888a33600160a060020a03167f6f13ca62553fcc2bcd2372180a43949c1e4cebba603901ede2f4e14f36b282ca8e8c8c8c6040518085600160a060020a0316600160a060020a03168152602001806020018381526020018281038252858582818152602001925060200280828437600083820152604051601f909101601f191690920182900397509095505050505050a45050505050505050505050565b336000818152600260209081526040808320600160a060020a03871680855290835292819020805460ff1916861515908117909155815190815290519293927f17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31929181900390910190a35050565b8060018111611e43576040805160e560020a62461bcd02815260206004820152602a60248201527f74686572652073686f756c64206265206d6f7265207468616e206f6e65206f7560448201527f74636f6d6520736c6f7400000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000611e503386846131eb565b6000818152600360205260409020549091508214611eb8576040805160e560020a62461bcd02815260206004820152601f60248201527f636f6e646974696f6e206e6f74207072657061726564206f7220666f756e6400604482015290519081900360640190fd5b60008181526004602052604090205415611f1c576040805160e560020a62461bcd02815260206004820152601e60248201527f7061796f75742064656e6f6d696e61746f7220616c7265616479207365740000604482015290519081900360640190fd5b6000805b83811015612003576000868683818110611f3657fe5b905060200201359050611f52818461297c90919063ffffffff16565b600085815260036020526040902080549194509083908110611f7057fe5b60009182526020909120015415611fd1576040805160e560020a62461bcd02815260206004820152601c60248201527f7061796f7574206e756d657261746f7220616c72656164792073657400000000604482015290519081900360640190fd5b6000848152600360205260409020805482919084908110611fee57fe5b60009182526020909120015550600101611f20565b506000811161205c576040805160e560020a62461bcd02815260206004820152601460248201527f7061796f757420697320616c6c207a65726f6573000000000000000000000000604482015290519081900360640190fd5b60008281526004602090815260408083208490556003825291829020825186815291820183815281549383018490528993339387937fb44d84d3289691f71497564b85d4233648d9dbae8cbdbb4329f301c3a0185894938a939192916060830190849080156120ea57602002820191906000526020600020905b8154815260200190600101908083116120d6575b5050935050505060405180910390a4505050505050565b60009081526003602052604090205490565b61010081111561216d576040805160e560020a62461bcd02815260206004820152601660248201527f746f6f206d616e79206f7574636f6d6520736c6f747300000000000000000000604482015290519081900360640190fd5b600181116121eb576040805160e560020a62461bcd02815260206004820152602a60248201527f74686572652073686f756c64206265206d6f7265207468616e206f6e65206f7560448201527f74636f6d6520736c6f7400000000000000000000000000000000000000000000606482015290519081900360840190fd5b60006121f88484846131eb565b6000818152600360205260409020549091501561225f576040805160e560020a62461bcd02815260206004820152601a60248201527f636f6e646974696f6e20616c7265616479207072657061726564000000000000604482015290519081900360640190fd5b81604051908082528060200260200182016040528015612289578160200160208202803883390190505b50600082815260036020908152604090912082516122ad9391929190910190613db1565b508284600160a060020a0316827fab3760c3bd2bb38b5bcf54dc79802ed67338b4cf29f3054ded67ed24661e4177856040518082815260200191505060405180910390a450505050565b60046020526000908152604090205481565b600160a060020a03918216600090815260026020908152604080832093909416825291909152205460ff1690565b600160a060020a03851615156123bd576040805160e560020a62461bcd02815260206004820152602860248201527f455243313135353a207461726765742061646472657373206d7573742062652060448201527f6e6f6e2d7a65726f000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b600160a060020a0386163314806123fc5750600160a060020a038616600090815260026020908152604080832033845290915290205460ff1615156001145b1515612478576040805160e560020a62461bcd02815260206004820152603860248201527f455243313135353a206e656564206f70657261746f7220617070726f76616c2060448201527f666f7220337264207061727479207472616e73666572732e0000000000000000606482015290519081900360840190fd5b6000848152600160209081526040808320600160a060020a038a1684529091529020546124ab908463ffffffff612cae16565b6000858152600160209081526040808320600160a060020a038b811685529252808320939093558716815220546124e390849061297c565b6000858152600160209081526040808320600160a060020a03808b16808652918452938290209490945580518881529182018790528051928a169233927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a461258d338787878787878080601f01602080910402602001604051908101604052809392919081815260200183838082843760009201919091525061344a92505050565b505050505050565b604080516020808201859052818301849052825180830384018152606090920190925280519101206000907f80000000000000000000000000000000000000000000000000000000000000008104151582805b600080516020613e1a833981519152600185089350600080516020613e1a8339815191526003600080516020613e1a83398151915280878809870908905061262f81613604565b915080600080516020613e1a83398151915283840914156125e857828015612658575060028206155b8061266f57508215801561266f5750600282066001145b156126885781600080516020613e1a8339815191520391505b8780156128f3577f4000000000000000000000000000000000000000000000000000000000000000810415159350600490810204600080516020613e1a8339815191526003600080516020613e1a83398151915280848509840908915060006126f083613604565b9050848015612700575060028106155b806127175750841580156127175750600281066001145b1561272d57600080516020613e1a833981519152035b82600080516020613e1a83398151915282830914612795576040805160e560020a62461bcd02815260206004820152601c60248201527f696e76616c696420706172656e7420636f6c6c656374696f6e20494400000000604482015290519081900360640190fd5b600060606006600160a060020a031688878686604051602001808581526020018481526020018381526020018281526020019450505050506040516020818303038152906040526040518082805190602001908083835b6020831061280b5780518252601f1990920191602091820191016127ec565b6001836020036101000a038019825116818451168082178552505050505050905001915050600060405180830381855afa9150503d806000811461286b576040519150601f19603f3d011682016040523d82523d6000602084013e612870565b606091505b50915091508115156128cc576040805160e560020a62461bcd02815260206004820152600c60248201527f6563616464206661696c65640000000000000000000000000000000000000000604482015290519081900360640190fd5b8080602001905160408110156128e157600080fd5b50805160209091015190985095505050505b6002830660011415612925577f4000000000000000000000000000000000000000000000000000000000000000851894505b5092979650505050505050565b60408051600160a060020a03939093166c01000000000000000000000000026020808501919091526034808501939093528151808503909301835260549093019052805191012090565b6000828201838110156112aa576040805160e560020a62461bcd02815260206004820152601b60248201527f536166654d6174683a206164646974696f6e206f766572666c6f770000000000604482015290519081900360640190fd5b60008215156129ea575060006109d1565b8282028284828115156129f957fe5b04146112aa576040805160e560020a62461bcd02815260206004820152602160248201527f536166654d6174683a206d756c7469706c69636174696f6e206f766572666c6f60448201527f7700000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000808211612ace576040805160e560020a62461bcd02815260206004820152601a60248201527f536166654d6174683a206469766973696f6e206279207a65726f000000000000604482015290519081900360640190fd5b60008284811515612adb57fe5b04949350505050565b6000828152600160209081526040808320600160a060020a0387168452909152902054612b17908263ffffffff612cae16565b6000838152600160209081526040808320600160a060020a038816808552908352818420949094558051868152918201859052805192939233927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a4505050565b600160a060020a0384161515612c05576040805160e560020a62461bcd02815260206004820152602160248201527f455243313135353a206d696e7420746f20746865207a65726f2061646472657360448201527f7300000000000000000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b6000838152600160209081526040808320600160a060020a0388168452909152902054612c3990839063ffffffff61297c16565b6000848152600160209081526040808320600160a060020a038916808552908352818420949094558051878152918201869052805133927fc3d58168c5ae7397731d063d5bbf3d657854427343f4c083240f7aacaa2d0f6292908290030190a4612ca83360008686868661344a565b50505050565b600082821115612d08576040805160e560020a62461bcd02815260206004820152601e60248201527f536166654d6174683a207375627472616374696f6e206f766572666c6f770000604482015290519081900360640190fd5b50900390565b612d2084600160a060020a0316613da9565b1561258d576040517fbc197c8100000000000000000000000000000000000000000000000000000000808252600160a060020a0388811660048401908152888216602485015260a060448501908152875160a4860152875193949289169363bc197c81938c938c938b938b938b9392916064820191608481019160c4909101906020808a01910280838360005b83811015612dc5578181015183820152602001612dad565b50505050905001848103835286818151815260200191508051906020019060200280838360005b83811015612e04578181015183820152602001612dec565b50505050905001848103825285818151815260200191508051906020019080838360005b83811015612e40578181015183820152602001612e28565b50505050905090810190601f168015612e6d5780820380516001836020036101000a031916815260200191505b5098505050505050505050602060405180830381600087803b158015612e9257600080fd5b505af1158015612ea6573d6000803e3d6000fd5b505050506040513d6020811015612ebc57600080fd5b5051600160e060020a0319161461258d576040805160e560020a62461bcd02815260206004820152603660248201527f455243313135353a20676f7420756e6b6e6f776e2076616c75652066726f6d2060448201527f6f6e455243313135354261746368526563656976656400000000000000000000606482015290519081900360840190fd5b600160a060020a0384161515612fc9576040805160e560020a62461bcd02815260206004820152602760248201527f455243313135353a206261746368206d696e7420746f20746865207a65726f2060448201527f6164647265737300000000000000000000000000000000000000000000000000606482015290519081900360840190fd5b8151835114613036576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b60005b8351811015613101576130b760016000868481518110151561305757fe5b906020019060200201518152602001908152602001600020600087600160a060020a0316600160a060020a031681526020019081526020016000205484838151811015156130a157fe5b602090810290910101519063ffffffff61297c16565b6001600086848151811015156130c957fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a038a168252909252902055600101613039565b5083600160a060020a03166000600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb8686604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b83811015613188578181015183820152602001613170565b50505050905001838103825284818151815260200191508051906020019060200280838360005b838110156131c75781810151838201526020016131af565b5050505090500194505050505060405180910390a4612ca833600086868686612d0e565b604080516c01000000000000000000000000600160a060020a0386160260208083019190915260348201859052605480830185905283518084039091018152607490920190925280519101209392505050565b80518251146132ab576040805160e560020a62461bcd02815260206004820152602e60248201527f455243313135353a2049447320616e642076616c756573206d757374206861766044820152600080516020613e3a833981519152606482015290519081900360840190fd5b60005b825181101561336a5761332082828151811015156132c857fe5b906020019060200201516001600086858151811015156132e457fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a038a1682529092529020549063ffffffff612cae16565b60016000858481518110151561333257fe5b602090810290910181015182528181019290925260409081016000908120600160a060020a03891682529092529020556001016132ae565b506000600160a060020a031683600160a060020a031633600160a060020a03167f4a39dc06d4c0dbc64b70af90fd698a233a518aa5d07e595d983b8c0526c8f7fb8585604051808060200180602001838103835285818151815260200191508051906020019060200280838360005b838110156133f15781810151838201526020016133d9565b50505050905001838103825284818151815260200191508051906020019060200280838360005b83811015613430578181015183820152602001613418565b5050505090500194505050505060405180910390a4505050565b61345c84600160a060020a0316613da9565b1561258d576040517ff23a6e6100000000000000000000000000000000000000000000000000000000808252600160a060020a03888116600484019081528882166024850152604484018790526064840186905260a060848501908152855160a4860152855193949289169363f23a6e61938c938c938b938b938b93929160c490910190602085019080838360005b838110156135035781810151838201526020016134eb565b50505050905090810190601f1680156135305780820380516001836020036101000a031916815260200191505b509650505050505050602060405180830381600087803b15801561355357600080fd5b505af1158015613567573d6000803e3d6000fd5b505050506040513d602081101561357d57600080fd5b5051600160e060020a0319161461258d576040805160e560020a62461bcd02815260206004820152603160248201527f455243313135353a20676f7420756e6b6e6f776e2076616c75652066726f6d2060448201527f6f6e455243313135355265636569766564000000000000000000000000000000606482015290519081900360840190fd5b6000600080516020613e1a833981519152808380099150808283098181820990508181840992508183850993508184840992508183840990508181820982818309905082818209905082818209905082818309915082828609945082858609915082828309915082828509935082848509915082828309915082828309915082828509915082828609945082858609915082828309915082828309915082828609915082828509935082848609945082858609915082828309915082828509935082848509915082828309905082818209905082818209905082818309915082828609945082858509935082848509915082828309915082828309915082828609945082858609915082828309915082828609915082828309915082828309915082828609915082828509935082848509915082828309905082818209905082818309905082818509905082818209905082818209905082818209905082818209905082818309915082828609945082858609915082828609915082828509935082848509915082828509915082828309915082828309905082818309905082818209838182099050838182099050838182099050838182099050838183099150508281830991508282860994508285850993508284850991508282860994508285850993508284860994508285850993508284860994508285860991508282860991508282830991508282850993508284850991508282830991508282860994508285850993508284850991508282850991508282860994508285850993508284860994508285850993508284850991508282830991508282850991508282860994508285860991508282860991508282850993508284860994508285850993508284860994508285850993508284850991508282850991508282830991508282860994508285850993508284850991508282850991508282830991508282860994508285860991508282830990508281820990508281830990508281860990508281820990508281820990508281820990508281820990508281830991508282850993508284860994508285850993508284860994508285860991508282860991508282830991508282830991508282830991508282860991508282850993508284850991508282850991508282830991508282860994508285860991508282860991508282850993508284860994508285860991508282830991508282850993508284860994508285860991508282850993508284860994508285850993508284850991508282850991508282860994508285850993508284850991508282850991508282830991508282830991508282860994508285860991508282830991508282830991508282860991508282850993508284860994508285860991508282860990508281820990508281820990508281830991508282850993508284850991508282860994508285850993508284860994508285850993508284860994508285850993508284850991508282850990508281850991508282830991508282830991508282820991505081818509935081848409925081838509935081848409925081838509935081848509905081818509905081818409925050808284099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808384099250808383099392505050565b6000903b1190565b828054828255906000526020600020908101928215613dec579160200282015b82811115613dec578251825591602001919060010190613dd1565b50613df8929150613dfc565b5090565b613e1691905b80821115613df85760008155600101613e02565b9056fe30644e72e131a029b85045b68181585d97816a916871ca8d3c208c16d87cfd47652073616d65206c656e67746873000000000000000000000000000000000000a165627a7a723058206543d05007da2466da91d2c810a1c021501cf9800905dc1c248a4e82308200430029",
+  "devdoc": {
+    "methods": {
+      "balanceOf(address,uint256)": {
+        "details": "Get the specified address' balance for token with specified ID.",
+        "params": {
+          "id": "ID of the token",
+          "owner": "The address of the token holder"
+        },
+        "return": "The owner's balance of the token type requested"
+      },
+      "balanceOfBatch(address[],uint256[])": {
+        "details": "Get the balance of multiple account/token pairs",
+        "params": {
+          "ids": "IDs of the tokens",
+          "owners": "The addresses of the token holders"
+        },
+        "return": "Balances for each owner and token id pair"
+      },
+      "getCollectionId(bytes32,bytes32,uint256)": {
+        "details": "Constructs an outcome collection ID from a parent collection and an outcome collection.",
+        "params": {
+          "conditionId": "Condition ID of the outcome collection to combine with the parent outcome collection.",
+          "indexSet": "Index set of the outcome collection to combine with the parent outcome collection.",
+          "parentCollectionId": "Collection ID of the parent outcome collection, or bytes32(0) if there's no parent."
+        }
+      },
+      "getConditionId(address,bytes32,uint256)": {
+        "details": "Constructs a condition ID from an oracle, a question ID, and the outcome slot count for the question.",
+        "params": {
+          "oracle": "The account assigned to report the result for the prepared condition.",
+          "outcomeSlotCount": "The number of outcome slots which should be used for this condition. Must not exceed 256.",
+          "questionId": "An identifier for the question to be answered by the oracle."
+        }
+      },
+      "getOutcomeSlotCount(bytes32)": {
+        "details": "Gets the outcome slot count of a condition.",
+        "params": {
+          "conditionId": "ID of the condition."
+        },
+        "return": "Number of outcome slots associated with a condition, or zero if condition has not been prepared yet."
+      },
+      "getPositionId(address,bytes32)": {
+        "details": "Constructs a position ID from a collateral token and an outcome collection. These IDs are used as the ERC-1155 ID for this contract.",
+        "params": {
+          "collateralToken": "Collateral token which backs the position.",
+          "collectionId": "ID of the outcome collection associated with this position."
+        }
+      },
+      "isApprovedForAll(address,address)": {
+        "params": {
+          "operator": "Address of authorized operator",
+          "owner": "The owner of the Tokens"
+        },
+        "return": "True if the operator is approved, false if not"
+      },
+      "prepareCondition(address,bytes32,uint256)": {
+        "details": "This function prepares a condition by initializing a payout vector associated with the condition.",
+        "params": {
+          "oracle": "The account assigned to report the result for the prepared condition.",
+          "outcomeSlotCount": "The number of outcome slots which should be used for this condition. Must not exceed 256.",
+          "questionId": "An identifier for the question to be answered by the oracle."
+        }
+      },
+      "reportPayouts(bytes32,uint256[])": {
+        "details": "Called by the oracle for reporting results of conditions. Will set the payout vector for the condition with the ID ``keccak256(abi.encodePacked(oracle, questionId, outcomeSlotCount))``, where oracle is the message sender, questionId is one of the parameters of this function, and outcomeSlotCount is the length of the payouts parameter, which contains the payoutNumerators for each outcome slot of the condition.",
+        "params": {
+          "payouts": "The oracle's answer",
+          "questionId": "The question ID the oracle is answering for"
+        }
+      },
+      "safeBatchTransferFrom(address,address,uint256[],uint256[],bytes)": {
+        "details": "Transfers `values` amount(s) of `ids` from the `from` address to the `to` address specified. Caller must be approved to manage the tokens being transferred out of the `from` account. If `to` is a smart contract, will call `onERC1155BatchReceived` on `to` and act appropriately.",
+        "params": {
+          "data": "Data forwarded to `onERC1155Received` if `to` is a contract receiver",
+          "from": "Source address",
+          "ids": "IDs of each token type",
+          "to": "Target address",
+          "values": "Transfer amounts per token type"
+        }
+      },
+      "safeTransferFrom(address,address,uint256,uint256,bytes)": {
+        "details": "Transfers `value` amount of an `id` from the `from` address to the `to` address specified. Caller must be approved to manage the tokens being transferred out of the `from` account. If `to` is a smart contract, will call `onERC1155Received` on `to` and act appropriately.",
+        "params": {
+          "data": "Data forwarded to `onERC1155Received` if `to` is a contract receiver",
+          "from": "Source address",
+          "id": "ID of the token type",
+          "to": "Target address",
+          "value": "Transfer amount"
+        }
+      },
+      "setApprovalForAll(address,bool)": {
+        "details": "Sets or unsets the approval of a given operator An operator is allowed to transfer all tokens of the sender on their behalf",
+        "params": {
+          "approved": "representing the status of the approval to be set",
+          "operator": "address to set the approval"
+        }
+      },
+      "splitPosition(address,bytes32,bytes32,uint256[],uint256)": {
+        "details": "This function splits a position. If splitting from the collateral, this contract will attempt to transfer `amount` collateral from the message sender to itself. Otherwise, this contract will burn `amount` stake held by the message sender in the position being split worth of EIP 1155 tokens. Regardless, if successful, `amount` stake will be minted in the split target positions. If any of the transfers, mints, or burns fail, the transaction will revert. The transaction will also revert if the given partition is trivial, invalid, or refers to more slots than the condition is prepared with.",
+        "params": {
+          "amount": "The amount of collateral or stake to split.",
+          "collateralToken": "The address of the positions' backing collateral token.",
+          "conditionId": "The ID of the condition to split on.",
+          "parentCollectionId": "The ID of the outcome collections common to the position being split and the split target positions. May be null, in which only the collateral is shared.",
+          "partition": "An array of disjoint index sets representing a nontrivial partition of the outcome slots of the given condition. E.g. A|B and C but not A|B and B|C (is not disjoint). Each element's a number which, together with the condition, represents the outcome collection. E.g. 0b110 is A|B, 0b010 is B, etc."
+        }
+      },
+      "supportsInterface(bytes4)": {
+        "details": "See `IERC165.supportsInterface`.     * Time complexity O(1), guaranteed to always use less than 30 000 gas."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "isApprovedForAll(address,address)": {
+        "notice": "Queries the approval status of an operator for a given owner."
+      }
+    }
+  }
+}
